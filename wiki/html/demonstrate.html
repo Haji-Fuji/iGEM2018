@@ -1,0 +1,344 @@
+{{TokyoTech/css/reset}}
+{{TokyoTech/css/main}}
+<!DOCTYPE html>
+<html>
+<title>Coli Sapiens</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Arial", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<div id="loader-bg">
+  <div id="loader">
+    <div class="photo-show">
+    <img src="http://2017.igem.org/wiki/images/f/f4/T--TokyoTech--load_1.png" width="600">
+    <img src="http://2017.igem.org/wiki/images/4/43/T--TokyoTech--load_2.png" width="600">
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:20px">Close Menu</a>
+  <div class="w3-container" style="margin-top: 20px;margin-bottom: 25px" id="wrap">
+    <img src="http://2017.igem.org/wiki/images/a/a8/T--TokyoTech--logo_white_bright_10211603.png" style="width: 100%">
+  </div>
+
+  <div style="padding-top: 15px; padding-left: 25px; id="wrap">
+
+  <div id="contents" style="z-index: 10">
+
+    <ul class="click_menu_checkbox vertm_down">
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px;">
+    <input type="checkbox" id="vmcb-a" />
+    <label for="vmcb-a"><a href="http://2017.igem.org/Team:TokyoTech">Home</a></label>
+    </li>
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-b" />
+    <label for="vmcb-b"><a href="http://2017.igem.org/Team:TokyoTech/Medal">Achievements</a></label>
+    </li>
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-c" />
+    <label for="vmcb-c"><a>Project</a></label>
+     <ul>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Description" class="w3-bar-item w3-button w3-hover-white">Description</a></li>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Project/Basic_Parts" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Basic Parts</a></li>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Project/Composite_Parts" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Composite Parts</a></li>
+    </ul>
+    </li>
+
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-d" />
+    <label for="vmcb-d"><a>Experiment</a></label>
+     <ul>
+
+        <li>
+        <input type="checkbox" id="vmcb-d1" />
+        <label for="vmcb-d1"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Overview" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="text-align: center;">Overview</a></label>
+        </li>
+
+        <li style="padding-bottom: 10px; padding-top: 5px">
+        <input type="checkbox" id="vmcb-d2" />
+          <label for="vmcb-d2"><a style="text-align: center;">Bacteria to <br>Human Cells ▼</a></label>
+            <ul>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">TraI Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Improvement" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">TraI Improvement <br>Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraR_Reporter_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" >TraR Reporter <br>Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Transcriptome_Analysis" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Transcriptome <br>Analysis</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Chimeric_Transcription_Factor" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Chimeric <br> Transcription <br> Factor Assay</a></li>
+            </ul>
+      </li>
+
+      <li style="padding-bottom: 3px">
+      <input type="checkbox" id="vmcb-d3" />
+    <label for="vmcb-d3"><a style="text-align: center;">Human Cells to <br>Bacteria ▼</a></label>
+        <ul>
+          <li><a href="http://2017.igem.org/Team:TokyoTech/Experiment/AHK4_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">AHK4 Assay</a></li>
+          </ul>
+        </li>
+
+        <li>
+        <input type="checkbox" id="vmcb-d4" />
+    <label for="vmcb-d4"><a href="http://2017.igem.org/Team:TokyoTech/InterLab" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="text-align: center;">InterLab</a></label>
+        </li>
+    </ul>
+    </li>
+
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-e" />
+    <label for="vmcb-e"><a href="http://2017.igem.org/Team:TokyoTech/Model">Modelling</a></label>
+    </li>
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-f" />
+    <label for="vmcb-f"><a>Human Practices</a></label>
+    <ul>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Overview</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP/Silver" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Silver</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP/Gold_Integrated" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gold (Integrated)</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Demonstrate" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Demonstrate</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Collaborations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Collaborations</a></li>
+    </ul>
+    </li>
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-g" />
+    <label for="vmcb-g"><a>About us</a></label>
+    <ul>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Team</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Attributions" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Attributions</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Sponsors" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sponsors</a></li>
+    </ul>
+    </li>
+    </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()"><img src="http://www.adultb2b.biz/wp-content/themes/adultb2b%20-%20new/assets/images/menuBtn.png" style="width: 30px"></a>
+  <span style="padding-top: 5px">iGEM Tokyo Tech</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+<div class="w3-container" id="contact" style="margin-top:30px"><!-- ページタイトル -->
+      <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px" align="center">Demonstrate</h2>
+    </div>
+
+<hr>
+
+
+  <div class="w3-container" id="overview" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Introduction</b></h2>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <p style="font-size: 16px; text-indent:1em">
+    The aim of our project is having human cells control the number of bacteria for a long period; in other words, we aim to create a sustainable co-culture system of human and bacterial cells. In our co-culture system, human cells repress bacterial growth moderately so that too many bacterial cells do not display negative influence to human cells. However, given that our co-culture system is supposed to be applied to human therapies, every effort must be made for bacteria not to show unexpected toxicity and survive in external environments. To this end, we selected and engineered two BioBrick parts which encode kill switches for biosafety of future applications.
+    </p><br>
+
+  </div>
+
+<hr>
+
+  <div class="w3-container" id="overview" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Signaling molecules selection</b></h2>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <p style="font-size: 16px; text-indent:1em">
+    The most studied signaling molecules that are used for intercellular communication in nature are AHLs (acyl-homoserine lactone). AHLs are produced by some kinds of gram negative bacteria and are used for regulating gene expression depending on population density; this mechanism is called “quorum sensing”. Therefore, we decided to use AHLs for human and bacterial cell communication, but toxic substances cannot be used as signaling molecules in our project. 
+    </p>
+    <p style="font-size: 16px; text-indent:1em">
+    It has been reported that AHLs stimulate human immune system [1], but toxic effects of AHLs have not been reported elsewhere. In order to gain insights on the toxicity, 3OC8HSL (hereafter C8), which is a kind of AHLs and is used as a signaling molecule in our project, was added into the culture medium of human cells in various concentrations. The result of C8 toxicity test suggested that C8 was nontoxic to human cells. The details are shown below.
+    </p><br>
+
+  </div>
+
+<hr>
+
+ <div class="w3-container" id="overview" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b> C8 toxicity test</b></h2>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <p style="font-size: 16px; text-indent:1em">
+    We evaluated the toxicity of C8 against untransformed EA.hy926, a human cell line used in our project, by conducting MTT assay following <a href="#mtt">the protocol (at the end of this page)</a>. MTT assay is a colorimetric assay for assessing cell metabolic activity. It can be used to measure cytotoxicity (loss of viable cells) or cytostatic activity (shift from proliferation to quiescence) of potential medicinal agents and toxic materials. As shown in Fig. 1 and 2, it is confirmed that over 80 microM of C8 can be toxic for the cells. We concluded that the amount of C8 produced by <span style="font-style: italic">E. coli</span> will not be toxic for human cells and therefore will not disturb the communication between <span style="font-style: italic">E. coli</span> and human cells.
+    </p><br>
+
+    <!-- 図開始 -->
+    <div class="w3-xxxlarge" style="padding-bottom: 10px;padding-top: 10px;text-align: center">
+      <figure>
+      <img src="http://2017.igem.org/wiki/images/7/72/MTT_assay_v3.png" style="max-width:100%">
+      <figcaption style="font-size: 16px">Fig. 1 Time course observation of the cells in MTT Assay</figcaption>
+      </figure>
+      </div><!-- 図終了 -->
+
+      <div class="w3-xxxlarge" style="padding-bottom: 10px;padding-top: 10px;text-align: center">
+      <figure>
+      <img src="http://2017.igem.org/wiki/images/4/40/MTT_assay_result.png" style="max-width:75%">
+      <figcaption style="font-size: 16px">Fig. 2 Cell viability 24 hours after C8 treatment in EA.hy 926</figcaption>
+      </figure>
+      </div><!-- 図終了 -->
+
+  </div>
+
+<hr>
+
+ <div class="w3-container" id="overview" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Parts selection</b></h2>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <p style="font-size: 16px; text-indent:1em">
+    Harmful parts and substances are not allowed in our project. Through enormous investigation of literatures, we assumed that chimeric transcription factor (RelA/TraR) and iP (isopentenyl adenine) can be synthesized by human cells without harming human cells [2]. TraR is a receptor protein of C8 as well as a transcription activating protein depending on C8 in <span style="font-style: italic">Agrobacterium tumefaciens</span>. RelA is a kind of NF-kB and is a human transcriptional factor that regulates a wide range of genes.
+    </p>
+    <p style="font-size: 16px; text-indent:1em">
+    It has been reported that when TraR is fused with the transcription activating domain of RelA and the nuclear localization signal sequence, the chimeric protein RelA/TraR acts as a transcription factor on the <span style="font-style: italic">tra</span> box DNA sequence (TraR-binding sequence) in human cells. Importantly, this transcription has shown to occur depending on C8. iP is a kind of cytokinin. Cytokinins are the signaling molecules (Phytohormones) that plants produce and play important roles in plant cell growth and differentiation. 
+    </p>
+    <p style="font-size: 16px; text-indent:1em">
+    When the genes of RelA/TraR and iP synthesis enzymes (<span style="font-style: italic">Arabidopsis thaliana AtIPT4 and LOG1</span>) were introduced to human cells, no harmful effects like cell growth inhibition were observed (Read Chimeric transcription factor page).
+    </p><br>
+
+    <!-- 図開始 -->
+    <div class="w3-xxxlarge" style="padding-bottom: 10px;padding-top: 10px;text-align: center">
+      <figure>
+      <img src="http://2017.igem.org/wiki/images/0/07/EPed_EAhy926.png" style="max-width:70%">
+      <figcaption style="font-size: 16px">Fig. 3 Human cells introduced the genes of RelA/TraR and iP synthesis</figcaption>
+      </figure>
+      </div><!-- 図終了 -->
+
+      <!-- 図開始 -->
+    <div class="w3-xxxlarge" style="padding-bottom: 10px;padding-top: 10px;text-align: center">
+      <figure>
+      <img src="http://2017.igem.org/wiki/images/9/9f/EAhy926.png" style="max-width:70%">
+      <figcaption style="font-size: 16px">Fig. 4 Negative control (Not gene transuded)</figcaption>
+      </figure>
+      </div><!-- 図終了 -->
+
+  </div>
+
+<hr>
+
+  <div class="w3-container" id="overview" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Double kill switches</b></h2>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <p style="font-size: 16px; text-indent:1em">
+    To stop bacterial excessive growth, we introduced two kill switches, AHK4 and MazF, into mammalian cells. AHK4 is a receptor of iP derived from <span style="font-style: italic">Arabidopsis thaliana</span> and MazF is toxic component of an <span style="font-style: italic">Escherichia coli</span> toxin-antitoxin (TA) module. As described in the Project page and the AHK4 Assay page, AHK4 is originally employed here to achieve intercellular signaling from mammalian cells to bacterial cells. However, during our assay, AHK4 was found to be toxic for <span style="font-style: italic">E. coli</span> and inhibited cell growth (Read <a href="http://2017.igem.org/Team:TokyoTech/Experiment/AHK4__Assay">AHK4 Assay</a>). Therefore, we came up with an idea where AHK4 is exploited as a kill switch for <span style="font-style: italic">E. coli</span> after receiving iP and completing signal transduction. Since the promoter for expressing AHK4 is the arabinose-inducible type (<a href="http://parts.igem.org/Part:BBa_K2505001">BBa_K2505001</a>) throughout our project, adding arabinose becomes a trigger for kill switch in <span style="font-style: italic">E. coli</span>.
+Moreover, we characterized that the downstream gene of cps promoter can be expressed by arabinose independent of  AHK4 response(Read <a href="http://2017.igem.org/Team:TokyoTech/Experiment/AHK4_Assay">AHK4 Assay</a>). Thus, by employing <span style="font-style: italic">mazF</span> as the downstream gene, both AHK4 and MazF can be easily induced by arabinose. These double kill switches are expected to work to repress harmful bacterial excessive growth.
+    </p><br>
+
+  </div>
+
+
+
+<hr>
+
+   <div id="mtt" class="w3-container" id="overview" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b> Appendix: MTT Assay Protocol</b></h2>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  Read <a href = http://2017.igem.org/wiki/images/9/9e/T--TokyoTech--Material_and_Mthotd_MTT_Assay.pdf>MTT Assay Protocol</a> page
+    </div>
+
+<hr>
+
+
+  <div class="w3-container" id="overview" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Reference</b></h2>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <p style="font-size: 16px; text-indent:1em">
+   [1]Inter-kingdom signalling: communication between bacteria and their hosts (2008) David T. Hughes & Vanessa Sperandio</p>
+   <p style="font-size: 16px; text-indent:1em">
+   [2]Foundational Platform for Mammalian Synthetic Biology (2012) Noah Davidsohn
+
+    </p><br>
+
+  </div>
+  </div>
+
+
+<!-- End page content -->
+</div>
+
+ <div class="w3-container" id="contact" style="margin-top:20px">
+ <p id="pageTop" style="text-align:right"><a href="#wrap"><img src="http://2017.igem.org/wiki/images/0/0d/T--TokyoTech--page_top_2.png" style="width:200px"></a></p>
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"><a href="http://96haji.me/" title="W3.CSS" target="_blank" class="w3-hover-opacity">Hajime Fujita with W3.CSS: All Rights Reserved</a></p></div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+$(function() {
+  var h = $(window).height();
+ 
+  $('#wrap').css('display','none');
+  $('#loader-bg ,#loader').height(h).css('display','block');
+});
+ 
+$(window).load(function () { //全ての読み込みが完了したら実行
+  $('#loader-bg').delay(900).fadeOut(800);
+  $('#loader').delay(600).fadeOut(300);
+  $('#wrap').css('display', 'block');
+});
+</script>
+<script>
+//■page topボタン
+$(function(){
+var topBtn=$('#pageTop');
+topBtn.hide();
+ 
+//◇ボタンの表示設定
+$(window).scroll(function(){
+  if($(this).scrollTop()>80){
+    //---- 画面を80pxスクロールしたら、ボタンを表示する
+    topBtn.fadeIn();
+  }else{
+    //---- 画面が80pxより上なら、ボタンを表示しない
+    topBtn.fadeOut();
+  } 
+});
+ 
+// ◇ボタンをクリックしたら、スクロールして上に戻る
+topBtn.click(function(){
+  $('body,html').animate({
+  scrollTop: 0},500);
+  return false;
+});
+
+});
+</script>
+
+</body>
+</html>

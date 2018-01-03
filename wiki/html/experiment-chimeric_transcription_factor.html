@@ -1,0 +1,310 @@
+{{TokyoTech/css/reset}}
+{{TokyoTech/css/main}}
+<!DOCTYPE html>
+<html>
+<title>Coli Sapiens</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Arial", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<div id="loader-bg">
+  <div id="loader">
+    <div class="photo-show">
+    <img src="http://2017.igem.org/wiki/images/f/f4/T--TokyoTech--load_1.png" width="600">
+    <img src="http://2017.igem.org/wiki/images/4/43/T--TokyoTech--load_2.png" width="600">
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:20px">Close Menu</a>
+  <div class="w3-container" style="margin-top: 20px;margin-bottom: 25px" id="wrap">
+    <img src="http://2017.igem.org/wiki/images/a/a8/T--TokyoTech--logo_white_bright_10211603.png" style="width: 100%">
+  </div>
+
+  <div style="padding-top: 15px; padding-left: 25px; id="wrap">
+
+  <div id="contents" style="z-index: 10">
+
+    <ul class="click_menu_checkbox vertm_down">
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px;">
+    <input type="checkbox" id="vmcb-a" />
+    <label for="vmcb-a"><a href="http://2017.igem.org/Team:TokyoTech">Home</a></label>
+    </li>
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-b" />
+    <label for="vmcb-b"><a href="http://2017.igem.org/Team:TokyoTech/Medal">Achievements</a></label>
+    </li>
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-c" />
+    <label for="vmcb-c"><a>Project</a></label>
+     <ul>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Description" class="w3-bar-item w3-button w3-hover-white">Description</a></li>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Project/Basic_Parts" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Basic Parts</a></li>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Project/Composite_Parts" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Composite Parts</a></li>
+    </ul>
+    </li>
+
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-d" />
+    <label for="vmcb-d"><a>Experiment</a></label>
+     <ul>
+
+        <li>
+        <input type="checkbox" id="vmcb-d1" />
+        <label for="vmcb-d1"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Overview" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="text-align: center;">Overview</a></label>
+        </li>
+
+        <li style="padding-bottom: 10px; padding-top: 5px">
+        <input type="checkbox" id="vmcb-d2" />
+          <label for="vmcb-d2"><a style="text-align: center;">Bacteria to <br>Human Cells ▼</a></label>
+            <ul>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">TraI Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Improvement" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">TraI Improvement <br>Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraR_Reporter_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" >TraR Reporter <br>Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Transcriptome_Analysis" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Transcriptome <br>Analysis</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Chimeric_Transcription_Factor" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Chimeric <br> Transcription <br> Factor Assay</a></li>
+            </ul>
+      </li>
+
+      <li style="padding-bottom: 3px">
+      <input type="checkbox" id="vmcb-d3" />
+    <label for="vmcb-d3"><a style="text-align: center;">Human Cells to <br>Bacteria ▼</a></label>
+        <ul>
+          <li><a href="http://2017.igem.org/Team:TokyoTech/Experiment/AHK4_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">AHK4 Assay</a></li>
+          </ul>
+        </li>
+
+        <li>
+        <input type="checkbox" id="vmcb-d4" />
+    <label for="vmcb-d4"><a href="http://2017.igem.org/Team:TokyoTech/InterLab" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="text-align: center;">InterLab</a></label>
+        </li>
+    </ul>
+    </li>
+
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-e" />
+    <label for="vmcb-e"><a href="http://2017.igem.org/Team:TokyoTech/Model">Modelling</a></label>
+    </li>
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-f" />
+    <label for="vmcb-f"><a>Human Practices</a></label>
+    <ul>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Overview</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP/Silver" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Silver</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP/Gold_Integrated" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gold (Integrated)</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Demonstrate" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Demonstrate</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Collaborations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Collaborations</a></li>
+    </ul>
+    </li>
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-g" />
+    <label for="vmcb-g"><a>About us</a></label>
+    <ul>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Team</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Attributions" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Attributions</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Sponsors" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sponsors</a></li>
+    </ul>
+    </li>
+    </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()"><img src="http://www.adultb2b.biz/wp-content/themes/adultb2b%20-%20new/assets/images/menuBtn.png" style="width: 30px"></a>
+  <span style="padding-top: 5px">iGEM Tokyo Tech</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px"><!-- ここから本文 -->
+
+<div class="w3-container" id="contact" style="margin-top:30px"><!-- ページタイトル -->
+			<h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px" align="center">Chimeric Transcription Factor Assay</h1>
+		</div>
+
+<hr>
+
+<div class="w3-container" id="intro" style="margin-top:20px"><!-- この箱の中にテキストや画像をまとめる -->
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Introduction</b></h1><!-- 小見出し -->
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <figcaption style="font-size: 16px">
+　In this assay, we investigated whether human cells (the EA.hy926 cell line) receive AHL, a signaling molecule that is synthesized in and exported from <span style="font-style: italic">E. coli</span> and induce the transcription of <span style="font-style: italic">atIPT4</span> and <span style="font-style: italic">log1</span> genes to synthesize iP(Read <a href = http://2017.igem.org/Team:TokyoTech/Experiment/AHK4_Assay>"AHK4 Assay"</a> page).
+</br>
+　AHLs, which stand for [N-]acyl-homoserine lactones, are small signaling molecules and are employed in the bacterial “Quorum Sensing”(Read <a href = http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Assay>"TraI Assay"</a> page). Among several kinds of AHLs, 3OC8HSL (C8) was chosen in the assay. 
+
+</p>
+
+  </div>
+
+<hr>
+
+<div class="w3-container" id="summary" style="margin-top:20px"><!-- この箱の中にテキストや画像をまとめる -->
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Summary</b></h1><!-- 小見出し -->
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <figcaption style="font-size: 16px">
+　As shown in Fig. 1, two plasmids were introduced into the EA.hy926 cells by electroporation. The CAG promoter (pCAG) constantly expresses RelA/NLS/TraR. When RelA/NLS/TraR binds to C8, this complex binds to the (tra box)<sub>7</sub> sequence and activates transcription from the CMV minimal promoter (CMV min). The (tra box)<sub>7</sub> sequence is the binding site for TraR (and also RelA/NLS/TraR) and works as the transcription enhancer. The core sequence of the (tra box)<sub>7</sub> is “ATGTGCAGATCTGCACAT” and this sequence is repeated seven times. As a result, the <span style="font-style: italic">atIPT4</span>
+ and <span style="font-style: italic">log1</span> genes are transcribed depending on C8. The <span style="font-style: italic">atIPT4</span> and <span style="font-style: italic">log1</span> genes are derived from <span style="font-style: italic">A. thaliana</span>, and their products jointly work as iP synthetase.
+
+
+    </p>
+
+    <div class="w3-xxxlarge" style="padding-bottom: 10px;padding-top: 10px;text-align: center">
+      <figure>
+      <img src="http://2017.igem.org/wiki/images/1/15/T--TokyoTech--human_cell_circuit.png" style="max-width:75%">
+      <figcaption style="font-size: 16px">Fig. 1 Construction of iP synthetase genes</figcaption>
+      </figure>
+      </div>
+    <figcaption style="font-size: 16px">
+　IVS (intervining sequence) is one kind of introns and is important for increasing the mRNA stability in eukaryotic cells. IRES (internal ribosome entry site) is an RNA element that allows translation initiation in a cap-independent manner. The term “polyA” indicates the polyadenylation signal that  is important for the nuclear export, translation, and stability of mRNA.
+ </p>
+
+
+  </div>
+
+<hr>
+
+<div class="w3-container" id="results" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Results</b></h1><!-- 小見出し -->
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <figcaption style="font-size: 16px">
+　The transformed cells were treated or not treated with different concentrations of C8. Then, the mRNA level of <span style="font-style: italic">atIPT4</span> and <span style="font-style: italic">log1</span> was analyzed using quantitative RT-PCR. As shown in Fig. 2, the CMV minimal promoter was activated following the addition of C8. 
+
+    </p>
+
+    <div class="w3-xxxlarge" style="padding-bottom: 10px;padding-top: 10px;text-align: center">
+    	<figure>
+    	<img src="http://2017.igem.org/wiki/images/e/e9/Human_cell_result_v3.png" style="max-width:85%">
+    	<figcaption style="font-size: 16px">Fig. 2 Result of the qualitative experiment</figcaption>
+    	</figure>
+    	</div>
+    <figcaption style="font-size: 16px">
+　The term“Cont”means the control cells that are not electroporated, while “EP” means the electroporated cells. The concentrations of added C8 are indicated below the bars. 
+ </p>
+  </div>
+
+<hr>
+
+<div class="w3-container" id="results" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Discussion</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <figcaption style="font-size: 16px">
+　We confirmed that the transcription of <span style="font-style: italic">atIPT4</span> and <span style="font-style: italic">log1</span> genes were induced by C8 addition and the degree of induction depends on C8 concentration.
+
+    </p>
+
+</div>
+
+<hr>
+
+<div class="w3-container" id="results" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Protocol</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <center>
+      <object data="http://2017.igem.org/wiki/images/c/ca/Chimeric_Transcription_Factor_Assay_Protocol_v2.pdf" type="application/pdf" style="width: 600px; height: 300px"></object>
+    </center>
+
+</div>
+
+<hr>
+
+<div class="w3-container" id="results" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Reference</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <figcaption style="font-size: 16px">Petra Neddermann, Cesare Gargioli, Ester Muraglia, Sania Sambuncini, Fabio Bonelli, Raffaele De Francesco, Riccardo cortese (2003) A novel, inducible, eukaryotic gene expression system based on the quorum-sensing transcription facter TraR. EMBO reports VOL 
+4: 159-165.</p>
+<div style="margin-top:16px">
+    </p>
+
+</div>
+
+</div><!-- ここまでが編集可能範囲 -->
+
+ <div class="w3-container" id="contact" style="margin-top:20px">
+ <p id="pageTop" style="text-align:right"><a href="#wrap"><img src="http://2017.igem.org/wiki/images/0/0d/T--TokyoTech--page_top_2.png" style="width:200px"></a></p>
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"><a href="http://96haji.me/" title="W3.CSS" target="_blank" class="w3-hover-opacity">Hajime Fujita with W3.CSS: All Rights Reserved</a></p></div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+$(function() {
+  var h = $(window).height();
+ 
+  $('#wrap').css('display','none');
+  $('#loader-bg ,#loader').height(h).css('display','block');
+});
+ 
+$(window).load(function () { //全ての読み込みが完了したら実行
+  $('#loader-bg').delay(900).fadeOut(800);
+  $('#loader').delay(600).fadeOut(300);
+  $('#wrap').css('display', 'block');
+});
+</script>
+<script>
+//■page topボタン
+$(function(){
+var topBtn=$('#pageTop');
+topBtn.hide();
+ 
+//◇ボタンの表示設定
+$(window).scroll(function(){
+  if($(this).scrollTop()>80){
+    //---- 画面を80pxスクロールしたら、ボタンを表示する
+    topBtn.fadeIn();
+  }else{
+    //---- 画面が80pxより上なら、ボタンを表示しない
+    topBtn.fadeOut();
+  } 
+});
+ 
+// ◇ボタンをクリックしたら、スクロールして上に戻る
+topBtn.click(function(){
+  $('body,html').animate({
+  scrollTop: 0},500);
+  return false;
+});
+
+});
+</script>
+
+</body>
+</html>

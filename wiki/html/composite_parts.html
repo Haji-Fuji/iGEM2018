@@ -1,0 +1,354 @@
+{{TokyoTech/css/reset}}
+{{TokyoTech/css/main}}
+<!DOCTYPE html>
+<html>
+<title>Coli Sapiens</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Arial", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<div id="loader-bg">
+  <div id="loader">
+    <div class="photo-show">
+    <img src="http://2017.igem.org/wiki/images/f/f4/T--TokyoTech--load_1.png" width="600">
+    <img src="http://2017.igem.org/wiki/images/4/43/T--TokyoTech--load_2.png" width="600">
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:20px">Close Menu</a>
+  <div class="w3-container" style="margin-top: 20px;margin-bottom: 25px" id="wrap">
+    <img src="http://2017.igem.org/wiki/images/a/a8/T--TokyoTech--logo_white_bright_10211603.png" style="width: 100%">
+  </div>
+
+  <div style="padding-top: 15px; padding-left: 25px; id="wrap">
+
+  <div id="contents" style="z-index: 10">
+
+    <ul class="click_menu_checkbox vertm_down">
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px;">
+    <input type="checkbox" id="vmcb-a" />
+    <label for="vmcb-a"><a href="http://2017.igem.org/Team:TokyoTech">Home</a></label>
+    </li>
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-b" />
+    <label for="vmcb-b"><a href="http://2017.igem.org/Team:TokyoTech/Medal">Achievements</a></label>
+    </li>
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-c" />
+    <label for="vmcb-c"><a>Project</a></label>
+     <ul>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Description" class="w3-bar-item w3-button w3-hover-white">Description</a></li>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Project/Basic_Parts" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Basic Parts</a></li>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Project/Composite_Parts" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Composite Parts</a></li>
+    </ul>
+    </li>
+
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-d" />
+    <label for="vmcb-d"><a>Experiment</a></label>
+     <ul>
+
+        <li>
+        <input type="checkbox" id="vmcb-d1" />
+        <label for="vmcb-d1"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Overview" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="text-align: center;">Overview</a></label>
+        </li>
+
+        <li style="padding-bottom: 10px; padding-top: 5px">
+        <input type="checkbox" id="vmcb-d2" />
+          <label for="vmcb-d2"><a style="text-align: center;">Bacteria to <br>Human Cells ▼</a></label>
+            <ul>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">TraI Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Improvement" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">TraI Improvement <br>Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraR_Reporter_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" >TraR Reporter <br>Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Transcriptome_Analysis" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Transcriptome <br>Analysis</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Chimeric_Transcription_Factor" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Chimeric <br> Transcription <br> Factor Assay</a></li>
+            </ul>
+      </li>
+
+      <li style="padding-bottom: 3px">
+      <input type="checkbox" id="vmcb-d3" />
+    <label for="vmcb-d3"><a style="text-align: center;">Human Cells to <br>Bacteria ▼</a></label>
+        <ul>
+          <li><a href="http://2017.igem.org/Team:TokyoTech/Experiment/AHK4_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">AHK4 Assay</a></li>
+          </ul>
+        </li>
+
+        <li>
+        <input type="checkbox" id="vmcb-d4" />
+    <label for="vmcb-d4"><a href="http://2017.igem.org/Team:TokyoTech/InterLab" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="text-align: center;">InterLab</a></label>
+        </li>
+    </ul>
+    </li>
+
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-e" />
+    <label for="vmcb-e"><a href="http://2017.igem.org/Team:TokyoTech/Model">Modelling</a></label>
+    </li>
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-f" />
+    <label for="vmcb-f"><a>Human Practices</a></label>
+    <ul>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Overview</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP/Silver" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Silver</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP/Gold_Integrated" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gold (Integrated)</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Demonstrate" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Demonstrate</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Collaborations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Collaborations</a></li>
+    </ul>
+    </li>
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-g" />
+    <label for="vmcb-g"><a>About us</a></label>
+    <ul>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Team</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Attributions" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Attributions</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Sponsors" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sponsors</a></li>
+    </ul>
+    </li>
+    </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()"><img src="http://www.adultb2b.biz/wp-content/themes/adultb2b%20-%20new/assets/images/menuBtn.png" style="width: 30px"></a>
+  <span style="padding-top: 5px">iGEM Tokyo Tech</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px; z-index: 1">
+
+    <div class="w3-container" id="contact" style="margin-top:30px"><!-- ページタイトル -->
+      <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px" align="center">Composite Parts</h2>
+    </div>
+      
+      <hr>
+
+      <br>
+
+      <div id="normal_parts_header" class="container_header" style="text-align: center;">
+
+        <h1><span style="padding-bottom: 30px">TokyoTech 2017 iGEM Team Composite Parts</span></h1>
+      </div><!-- /normal_parts_header -->
+
+      <br>
+      <div id="normal_parts_contents" class="container_contents">
+      <center>
+        <table border="1" align="center" class="parts_table">
+          <tbody>
+            <tr>
+              <th class="parts_table_name">Name</th>
+              <th class="parts_table_type">Type</th>
+              <th class="parts_table_description">Description</th>
+              <th class="parts_table_design">Design</th>
+              <th class="parts_table_length">Length(bp)</th>
+            </tr>
+            
+            <tr>
+              <td><a href="http://parts.igem.org/Part:BBa_K2505001">BBa_K2505001</a><br>(Best Composite Part)</td>
+              <td>Composite</td>
+              <td>PBAD/araC-<span style="font-style:italic;">rbs-ahk4</span></td>
+              <td>Hazuki Hasegawa</td>
+              <td>4415</td>
+            </tr>
+            
+            <tr>
+              <td><a href="http://parts.igem.org/Part:BBa_K2505004">BBa_K2505004</a></td>
+              <td>Composite</td>
+              <td><span style="font-style:italic;">atIPT4</span>-IVS-IRES-<span style="font-style:italic;">log1</span></td>
+              <td>Hazuki Hasegawa</td>
+              <td>2539</td>
+            </tr>
+            <tr>
+              <td><a href="http://parts.igem.org/Part:BBa_K2505005">BBa_K2505005</a></td>
+              <td>Composite</td>
+              <td>(tra box)<sub>7</sub>-CMVmin-<span style="font-style:italic;">atIPT4</span>-IVS-IRES-<span style="font-style:italic;">log1</span>-polyA</td>
+              <td>Hazuki Hasegawa</td>
+              <td>3264</td>
+            </tr>
+            
+            <tr>
+              <td><a href="http://parts.igem.org/Part:BBa_K2505007">BBa_K2505007</a></td>
+              <td>Composite</td>
+              <td>P<span style="font-style:italic;">cps-rbs</span>-mCherry</td>
+              <td>Takuma Yasue</td>
+              <td>1428</td>
+            </tr>
+            <tr>
+              <td><a href="http://parts.igem.org/Part:BBa_K2505008">BBa_K2505008</a></td>
+              <td>Composite</td>
+              <td>Ptet-<span style="font-style:italic;">rbs-traI-tt</span></td>
+              <td>Hazuki Hasegawa</td>
+              <td>1079</td>
+            </tr>
+            <tr>
+              <td><a href="http://parts.igem.org/Part:BBa_K2505009">BBa_K2505009</a></td>
+              <td>Composite</td>
+              <td>Ptra-<span style="font-style:italic;">rrbs-gfp-tt</span></td>
+              <td>Hazuki Hasegawa</td>
+              <td>1034</td>
+            </tr>
+            
+            <tr>
+              <td><a href="http://parts.igem.org/Part:BBa_K2505010">BBa_K2505010</a></td>
+              <td>Composite</td>
+              <td>Ptet-<span style="font-style:italic;">rbs-traI-tt</span></td>
+              <td>Hazuki Hasegawa</td>
+              <td>856</td>
+            </tr>
+            <tr>
+              <td><a href="http://parts.igem.org/Part:BBa_K2505030">BBa_K2505030</a></td>
+              <td>Composite</td>
+              <td>Ptet-<span style="font-style:italic;">rbs-traI</span> (K34G)-<span style="font-style: italic">tt</span></td>
+              <td>Kazunori Motai</td>
+              <td>859</td>
+            </tr>
+            <tr>
+              <td><a href="http://parts.igem.org/Part:BBa_K2505031">BBa_K2505031</a></td>
+              <td>Composite</td>
+              <td>Ptet-<span style="font-style:italic;">rbs-traI</span> (Q63G)-<span style="font-style: italic">tt</span></td>
+              <td>Kazunori Motai</td>
+              <td>856</td>
+            </tr>
+            <tr>
+              <td><a href="http://parts.igem.org/Part:BBa_K2505032">BBa_K2505032</a></td>
+              <td>Composite</td>
+              <td>Ptet-<span style="font-style:italic;">rbs-traI</span> (K34G, Q63G)-<span style="font-style: italic">tt</span></td>
+              <td>Kazunori Motai</td>
+              <td>856</td>
+            </tr>
+
+          </tbody>
+        </table>
+        </center>
+
+<hr>
+
+<div class="w3-container" id="overview" style="margin-top:20px"><!-- この箱の中にテキストや画像をまとめる -->
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>PBAD/araC-<span style="font-style: italic">rbs-ahk4</span></b></h1><!-- 小見出し -->
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p style="font-size: 20px; text-indent:2em">Introduction</p>
+    <p style="font-size: 16px; text-indent:1em"> To establish a co-culture system, it is important that <span style="font-style: italic">E. coli</span> responds to signals produced by human cells. In our project, we decided to use isopentenyl adenine (iP), a kind of cytokinin, as a signal molecule. Cytokinins are the signaling molecules (or Phytohormones) that plants produce and play important roles in cell growth and differentiation. In the case of <span style="font-style: italic">Arabidopsis thaliana</span>, extracellular iP is received by a transmembrane receptor, AHK4. AHK4 has a histidine kinase activity, and binding of iP to AHK4 triggers auto-phosphorylation of AHK4 and the following histidine-to-aspartate phosphorelay. As a consequence, transcription from target genes is induced and/or repressed so that physiological states of plants are changed. The histidine kinase activity of AHK4 has shown to be activated depending on iP even in <span style="font-style: italic">E. coli</span> cells (Suzuki et al. 2001, Luká&#x0161; Spíchal et al. 2004). This fact encouraged us to use iP as a signaling molecule in our project (Read <a href=http://2017.igem.org/Team:TokyoTech/Experiment/AHK4_Assay>AHK4 Assay</a> page).</p><br><br>
+
+    <p style="font-size: 20px; text-indent:2em">Results</p>
+    <p style="font-size: 16px; text-indent:1em">1. Qualitative experiment
+    </p>
+
+    <p style="font-size: 16px; text-indent:1em">As shown in Fig. 1, blue color was developed only when cells carried the AHK4 expressing plasmid and when the medium contained 100 microM iP. Therefore, we concluded that AHK4 could receive iP and downstream AHK4→RcsD→RscB→<span style="font-style: italic">cps::lacZ</span> pathway was activated as expected.
+    </p>
+    	<div class="w3-xxxlarge" style="padding-bottom: 10px;padding-top: 10px;text-align: center">
+    	<figure>
+    	<img src="http://2017.igem.org/wiki/images/archive/c/c7/20171028045916%21T--TokyoTech--AHK4qualitive.png" style="max-width:80%">
+    	<figcaption style="font-size: 16px">Fig. 1  Result of the qualitative experiment</figcaption> 
+        <p style="font-size: 16px; text-indent:1em"> Cells were grown at room temperature on LB agar plates with and without iP. β-galactosidase activity was monitored by X-gal. Photographs were taken after 25h incubation.
+    	</figure>
+    	</div>
+
+   <p style="font-size: 16px; text-indent:1em">2. Quantitative experiment    
+    </p>
+    <p style="font-size: 16px; text-indent:1em">As shown in Fig. 2, over 1 microM of iP was required to observe the difference of β-galactosidase activity between AHK4 expressing cells and negative control cells. The β-galactosidase activity induced by 100 microM iP was 2.0-fold higher than that induced by 1 microM iP.
+    </p>
+
+    <div class="w3-xxxlarge" style="padding-bottom: 10px;padding-top: 10px;text-align: center">
+    	<figure>
+    	<img src="http://2017.igem.org/wiki/images/archive/2/2e/20171029045550%21T--TokyoTech--AHK4quantitative.png" style="max-width:80%">
+    	<figcaption style="font-size: 16px">Fig. 2  Result of quantitative experiment</figcaption>
+    	        <p style="font-size: 16px; text-indent:1em"> Cells were grown in liquid LB medium containing various concentrations of iP for overnight at 25˚C. β-galactosidase activity was monitored by the yellow color that was developed from ONPG.
+        </figure>
+    	</div>
+
+
+
+      </div><!-- /normal_parts_contents -->
+    </div><!-- /parts_2017 -->
+  </div>
+
+
+  
+ <div class="w3-container" id="contact" style="margin-top:20px">
+ <p id="pageTop" style="text-align:right"><a href="#wrap"><img src="http://2017.igem.org/wiki/images/0/0d/T--TokyoTech--page_top_2.png" style="width:200px"></a></p>
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"><a href="http://96haji.me/" title="W3.CSS" target="_blank" class="w3-hover-opacity">Hajime Fujita with W3.CSS: All Rights Reserved</a></p></div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+$(function() {
+  var h = $(window).height();
+ 
+  $('#wrap').css('display','none');
+  $('#loader-bg ,#loader').height(h).css('display','block');
+});
+ 
+$(window).load(function () { //全ての読み込みが完了したら実行
+  $('#loader-bg').delay(900).fadeOut(800);
+  $('#loader').delay(600).fadeOut(300);
+  $('#wrap').css('display', 'block');
+});
+</script>
+<script>
+//■page topボタン
+$(function(){
+var topBtn=$('#pageTop');
+topBtn.hide();
+ 
+//◇ボタンの表示設定
+$(window).scroll(function(){
+  if($(this).scrollTop()>80){
+    //---- 画面を80pxスクロールしたら、ボタンを表示する
+    topBtn.fadeIn();
+  }else{
+    //---- 画面が80pxより上なら、ボタンを表示しない
+    topBtn.fadeOut();
+  } 
+});
+ 
+// ◇ボタンをクリックしたら、スクロールして上に戻る
+topBtn.click(function(){
+  $('body,html').animate({
+  scrollTop: 0},500);
+  return false;
+});
+
+});
+</script>
+
+</body>
+</html>

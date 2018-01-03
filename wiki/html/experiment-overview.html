@@ -1,0 +1,382 @@
+{{TokyoTech/css/reset}}
+{{TokyoTech/css/main}}
+<!DOCTYPE html>
+<html>
+<title>Coli Sapiens</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Arial", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<div id="loader-bg">
+  <div id="loader">
+    <div class="photo-show">
+    <img src="http://2017.igem.org/wiki/images/f/f4/T--TokyoTech--load_1.png" width="600">
+    <img src="http://2017.igem.org/wiki/images/4/43/T--TokyoTech--load_2.png" width="600">
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:20px">Close Menu</a>
+  <div class="w3-container" style="margin-top: 20px;margin-bottom: 25px" id="wrap">
+    <img src="http://2017.igem.org/wiki/images/a/a8/T--TokyoTech--logo_white_bright_10211603.png" style="width: 100%">
+  </div>
+
+  <div style="padding-top: 15px; padding-left: 25px; id="wrap">
+
+  <div id="contents" style="z-index: 10">
+
+    <ul class="click_menu_checkbox vertm_down">
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px;">
+    <input type="checkbox" id="vmcb-a" />
+    <label for="vmcb-a"><a href="http://2017.igem.org/Team:TokyoTech">Home</a></label>
+    </li>
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-b" />
+    <label for="vmcb-b"><a href="http://2017.igem.org/Team:TokyoTech/Medal">Achievements</a></label>
+    </li>
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-c" />
+    <label for="vmcb-c"><a>Project</a></label>
+     <ul>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Description" class="w3-bar-item w3-button w3-hover-white">Description</a></li>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Project/Basic_Parts" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Basic Parts</a></li>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Project/Composite_Parts" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Composite Parts</a></li>
+    </ul>
+    </li>
+
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-d" />
+    <label for="vmcb-d"><a>Experiment</a></label>
+     <ul>
+
+        <li>
+        <input type="checkbox" id="vmcb-d1" />
+        <label for="vmcb-d1"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Overview" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="text-align: center;">Overview</a></label>
+        </li>
+
+        <li style="padding-bottom: 10px; padding-top: 5px">
+        <input type="checkbox" id="vmcb-d2" />
+          <label for="vmcb-d2"><a style="text-align: center;">Bacteria to <br>Human Cells ▼</a></label>
+            <ul>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">TraI Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Improvement" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">TraI Improvement <br>Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraR_Reporter_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" >TraR Reporter <br>Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Transcriptome_Analysis" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Transcriptome <br>Analysis</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Chimeric_Transcription_Factor" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Chimeric <br> Transcription <br>Factor Assay</a></li>
+            </ul>
+      </li>
+
+      <li style="padding-bottom: 3px">
+      <input type="checkbox" id="vmcb-d3" />
+    <label for="vmcb-d3"><a style="text-align: center;">Human Cells to <br>Bacteria ▼</a></label>
+        <ul>
+          <li><a href="http://2017.igem.org/Team:TokyoTech/Experiment/AHK4_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">AHK4 Assay</a></li>
+          </ul>
+        </li>
+
+        <li>
+        <input type="checkbox" id="vmcb-d4" />
+    <label for="vmcb-d4"><a href="http://2017.igem.org/Team:TokyoTech/InterLab" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="text-align: center;">InterLab</a></label>
+        </li>
+    </ul>
+    </li>
+
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-e" />
+    <label for="vmcb-e"><a href="http://2017.igem.org/Team:TokyoTech/Model">Modelling</a></label>
+    </li>
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-f" />
+    <label for="vmcb-f"><a>Human Practices</a></label>
+    <ul>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Overview</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP/Silver" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Silver</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP/Gold_Integrated" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gold (Integrated)</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Demonstrate" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Demonstrate</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Collaborations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Collaborations</a></li>
+    </ul>
+    </li>
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-g" />
+    <label for="vmcb-g"><a>About us</a></label>
+    <ul>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Team</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Attributions" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Attributions</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Sponsors" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sponsors</a></li>
+    </ul>
+    </li>
+    </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()"><img src="http://www.adultb2b.biz/wp-content/themes/adultb2b%20-%20new/assets/images/menuBtn.png" style="width: 30px"></a>
+  <span style="padding-top: 5px">iGEM Tokyo Tech</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+<div class="w3-container" id="contact" style="margin-top:30px"><!-- ページタイトル -->
+      <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px" align="center">Experiment: Overview</h1>
+    </div>
+
+<hr>
+
+
+  <div class="w3-container" style="margin-top:20px">
+  <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Introduction</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  <p style="font-size: 16px; text-indent:1em;padding-top: 15px">
+    For convenience of description, we devided experimental section into two parts. One is a series of assays to validate signal transmission system from bacteria to human cells. The other is a assay (AHK4 Assay) to validate the reverse system from human cells to bacteria. You can see the list of assays we conducted and also, a summary of InterLab activity.
+  </p>
+  </div>
+  </center>
+
+<hr>
+
+  <div class="w3-container" style="margin-top:20px; text-align: center;">
+      <center>
+      <div style="padding: 10px; margin-bottom: 3px; border: 1px dotted #333333;width: 90%; border-radius: 10px">
+      <h4 style="text-align: center">Signal transmission system from bacteria to human cells</h4>
+      <h5 style="text-align: center">~ Integration of systems derived from bacteria and human cells ~</h5>
+      <p style="font-size:16px;font-size: 16px; text-indent:1em;padding-top: 15px">
+      In our system, the transcription level is controlled by integrating quorum sensing (bacterial cell-to-cell communication) and NF-kB, transcription factor in mammalian cell. We used this system the signal transmission from bacteria to human cells. To validate the system, we conducted the assays shown below.
+      </p>
+      <div class="w3-xxxlarge" style="padding-bottom: 3px;text-align: center">
+      <figure>
+      <img src="http://2017.igem.org/wiki/images/e/e6/T--TokyoTech--bacteriatohuman.png" style="max-width:80%">
+      <figcaption style="font-size: 16px">Fig. 1 Mechanism of signal transmission system from bacteria to human</figcaption>
+      </figure>
+      </div>
+
+      
+       <div onclick="obj=document.getElementById('menu1').style; obj.display=(obj.display=='none')?'block':'none';" style="text-align: center;" style="margin-bottom: 30px"><button class="w3-button w3-red w3-padding-large w3-hover-black" style="font-size: 30px; margin-bottom: 30px">List of Assays</button></div>
+     
+       <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Assay">
+        <img src="http://2017.igem.org/wiki/images/2/23/Fig3_construction_of_TraI_gene3.png" style="width:100%">
+        <div class="w3-container">
+          <h3>TraI Assay</h3>
+        </div>
+        </a>
+      </div>
+    </div>
+<div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <a href="http://2017.igem.org/Team:TokyoTech/Experiment/Chimeric_Transcription_Factor">
+        <img src="http://2017.igem.org/wiki/images/1/15/T--TokyoTech--human_cell_circuit.png" style="width:100%">
+        <div class="w3-container">
+          <h3>Chimeric <br> Transcription Factor <br>Assay</h3>
+        </div>
+        </a>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraR_Reporter_Assay">
+        <img src="http://2017.igem.org/wiki/images/1/14/T--TokyoTech--TraRAssay.png" style="width:100%">
+        <div class="w3-container">
+          <h3>TraR Reporter <br> Assay</h3>
+        </div>
+        </a>
+      </div>
+    </div>
+</div>
+<hr>
+<div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+      <a href="http://2017.igem.org/Team:TokyoTech/Experiment/Transcriptome_Analysis">
+        <img src="http://2017.igem.org/wiki/images/1/10/T--TokyoTech--Transcriptome_malg2.png" style="width:100%">
+        <div class="w3-container">
+          <h3>Transcriptome <br> Analysis</h3>
+        </div>
+        </a>
+      </div>
+    </div>
+<div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Improvement">
+        <img src="http://2017.igem.org/wiki/images/d/db/T--TokyoTech--TraIimprove_11021228.png" style="width:100%">
+        <div class="w3-container">
+          <h3>TraI Improvement <br>Assay</h3>
+        </div>
+      </div>
+    </div>
+ </div>   
+
+  </div>
+  </center>
+
+      </div>
+      
+      <br>
+
+       <div class="w3-container" style="margin-top:20px; text-align: center;">
+       <center>
+      <div style="padding: 10px; margin-bottom: 10px; border: 1px dotted #333333;width: 90%;border-radius: 10px">
+       <h4 style="text-align: center">Signal transmission system from human cells to bacteria</h4>
+       <h5>~ Integration of systems derived from bacteria and plant cells ~</h5>
+
+      <p style="font-size:16px;font-size: 16px; text-indent:1em;padding-top: 15px">
+      In our system, the transcription level is controlled by integrating signal transmission systems derived from bacteria and plants. We used this system the signal transmission from human cells to bacteria.
+      </p>
+      <div class="w3-xxxlarge" style="padding-bottom: 10px;text-align: center">
+      <figure>
+      <img src="http://2017.igem.org/wiki/images/5/5a/T--TokyoTech--humantobacteria.png" style="width:80%">
+      <figcaption style="font-size: 16px">Fig. 2 Mechanism of signal transmission system from human cells to bacteria</figcaption>
+      </figure>
+      </div>
+
+      <div onclick="obj=document.getElementById('menu1').style; obj.display=(obj.display=='none')?'block':'none';" style="text-align: center;" style="margin-bottom: 30px"><button class="w3-button w3-red w3-padding-large w3-hover-black" style="font-size: 30px; margin-bottom: 30px">Assay</button></div>
+
+
+  <div class="w3-row-padding">
+
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <div class="w3-container">
+        </div>
+      </div>
+    </div> 
+
+  <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <a href="http://2017.igem.org/Team:TokyoTech/Experiment/AHK4_Assay">
+        <img src="http://2017.igem.org/wiki/images/archive/5/54/20171030133245%21T--Tokyotech--AHK4construct.png" style="width:100%">
+        <div class="w3-container">
+          <h3>AHK4 Assay</h3>
+        </div>
+        </a>
+      </div>
+    </div> 
+
+  <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <div class="w3-container">
+        </div>
+      </div>
+    </div> 
+
+</div>
+
+
+</div>
+      </center>
+      </div>
+
+
+<div class="w3-container" style="margin-top:20px">
+<center>
+<div style="padding: 10px; margin-bottom: 10px; border: 1px dotted #333333;width: 90%;border-radius: 10px">
+       <h4 style="text-align: center">InterLab</h4>
+
+      <p style="font-size:16px;font-size: 16px; text-indent:1em;padding-top: 15px;padding-bottom:20px">
+      In iGEM 2017, the InterLab Study is one of the bronze medal criteria. We measured the GFP expression level of the six designated devices, positive control and negative control using the plate reader. It was the second time for our team to join this InterLab Study (The first time in iGEM 2015).
+      </p>
+  
+
+      <div onclick="obj=document.getElementById('menu1').style; obj.display=(obj.display=='none')?'block':'none';" style="text-align: center;" style="margin-bottom: 30px"><a href="http://2017.igem.org/Team:TokyoTech/InterLab"><button class="w3-button w3-red w3-padding-large w3-hover-black" style="font-size: 30px; margin-bottom: 30px">Go to InterLab Page</button></a></div>
+
+</div>
+</center>
+</div>
+
+ </div>
+</div>
+
+
+<!-- End page content -->
+</div>
+
+ <div class="w3-container" id="contact" style="margin-top:20px">
+ <p id="pageTop" style="text-align:right"><a href="#wrap"><img src="http://2017.igem.org/wiki/images/0/0d/T--TokyoTech--page_top_2.png" style="width:200px"></a></p>
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"><a href="http://96haji.me/" title="W3.CSS" target="_blank" class="w3-hover-opacity">Hajime Fujita with W3.CSS: All Rights Reserved</a></p></div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+$(function() {
+  var h = $(window).height();
+ 
+  $('#wrap').css('display','none');
+  $('#loader-bg ,#loader').height(h).css('display','block');
+});
+ 
+$(window).load(function () { //全ての読み込みが完了したら実行
+  $('#loader-bg').delay(900).fadeOut(800);
+  $('#loader').delay(600).fadeOut(300);
+  $('#wrap').css('display', 'block');
+});
+</script>
+<script>
+//■page topボタン
+$(function(){
+var topBtn=$('#pageTop');
+topBtn.hide();
+ 
+//◇ボタンの表示設定
+$(window).scroll(function(){
+  if($(this).scrollTop()>80){
+    //---- 画面を80pxスクロールしたら、ボタンを表示する
+    topBtn.fadeIn();
+  }else{
+    //---- 画面が80pxより上なら、ボタンを表示しない
+    topBtn.fadeOut();
+  } 
+});
+ 
+// ◇ボタンをクリックしたら、スクロールして上に戻る
+topBtn.click(function(){
+  $('body,html').animate({
+  scrollTop: 0},500);
+  return false;
+});
+
+});
+</script>
+
+</body>
+</html>

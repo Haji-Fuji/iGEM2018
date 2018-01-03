@@ -1,0 +1,368 @@
+{{TokyoTech/css/reset}}
+{{TokyoTech/css/main}}
+<!DOCTYPE html>
+<html>
+<title>Coli Sapiens</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Arial", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<div id="loader-bg">
+  <div id="loader">
+    <div class="photo-show">
+    <img src="http://2017.igem.org/wiki/images/f/f4/T--TokyoTech--load_1.png" width="600">
+    <img src="http://2017.igem.org/wiki/images/4/43/T--TokyoTech--load_2.png" width="600">
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:20px">Close Menu</a>
+  <div class="w3-container" style="margin-top: 20px;margin-bottom: 25px" id="wrap">
+    <img src="http://2017.igem.org/wiki/images/a/a8/T--TokyoTech--logo_white_bright_10211603.png" style="width: 100%">
+  </div>
+
+  <div style="padding-top: 15px; padding-left: 25px; id="wrap">
+
+  <div id="contents" style="z-index: 10">
+
+    <ul class="click_menu_checkbox vertm_down">
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px;">
+    <input type="checkbox" id="vmcb-a" />
+    <label for="vmcb-a"><a href="http://2017.igem.org/Team:TokyoTech">Home</a></label>
+    </li>
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-b" />
+    <label for="vmcb-b"><a href="http://2017.igem.org/Team:TokyoTech/Medal">Achievements</a></label>
+    </li>
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-c" />
+    <label for="vmcb-c"><a>Project</a></label>
+     <ul>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Description" class="w3-bar-item w3-button w3-hover-white">Description</a></li>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Project/Basic_Parts" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Basic Parts</a></li>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Project/Composite_Parts" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Composite Parts</a></li>
+    </ul>
+    </li>
+
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-d" />
+    <label for="vmcb-d"><a>Experiment</a></label>
+     <ul>
+
+        <li>
+        <input type="checkbox" id="vmcb-d1" />
+        <label for="vmcb-d1"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Overview" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="text-align: center;">Overview</a></label>
+        </li>
+
+        <li style="padding-bottom: 10px; padding-top: 5px">
+        <input type="checkbox" id="vmcb-d2" />
+          <label for="vmcb-d2"><a style="text-align: center;">Bacteria to <br>Human Cells ▼</a></label>
+            <ul>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">TraI Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Improvement" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">TraI Improvement <br>Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraR_Reporter_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" >TraR Reporter <br>Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Transcriptome_Analysis" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Transcriptome <br>Analysis</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Chimeric_Transcription_Factor" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Chimeric <br> Transcription <br> Factor Assay</a></li>
+            </ul>
+      </li>
+
+      <li style="padding-bottom: 3px">
+      <input type="checkbox" id="vmcb-d3" />
+    <label for="vmcb-d3"><a style="text-align: center;">Human Cells to <br>Bacteria ▼</a></label>
+        <ul>
+          <li><a href="http://2017.igem.org/Team:TokyoTech/Experiment/AHK4_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">AHK4 Assay</a></li>
+          </ul>
+        </li>
+
+        <li>
+        <input type="checkbox" id="vmcb-d4" />
+    <label for="vmcb-d4"><a href="http://2017.igem.org/Team:TokyoTech/InterLab" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="text-align: center;">InterLab</a></label>
+        </li>
+    </ul>
+    </li>
+
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-e" />
+    <label for="vmcb-e"><a href="http://2017.igem.org/Team:TokyoTech/Model">Modelling</a></label>
+    </li>
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-f" />
+    <label for="vmcb-f"><a>Human Practices</a></label>
+    <ul>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Overview</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP/Silver" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Silver</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP/Gold_Integrated" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gold (Integrated)</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Demonstrate" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Demonstrate</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Collaborations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Collaborations</a></li>
+    </ul>
+    </li>
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-g" />
+    <label for="vmcb-g"><a>About us</a></label>
+    <ul>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Team</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Attributions" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Attributions</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Sponsors" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sponsors</a></li>
+    </ul>
+    </li>
+    </ul>
+    </div>
+
+  </div>
+</nav>
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()"><img src="http://www.adultb2b.biz/wp-content/themes/adultb2b%20-%20new/assets/images/menuBtn.png" style="width: 30px"></a>
+  <span style="padding-top: 5px">iGEM Tokyo Tech</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+<div class="w3-container" id="contact" style="margin-top:30px">
+      <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px" align="center">Human Practices: Overview</h1>
+    </div>
+
+<hr>
+
+<div class="w3-container" id="overview" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Overview</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p style="font-size: 16px; text-indent: 1em">This year, we tried to jump into as many chances as possible to learn more about role and value of synthetic biology and the future of this academic field. In this new information society, we can easily obtain knowledge on the Internet and many iGEMers may think the learning happens only in the labs or on the computers. That's sometimes true, but it's not always true that a bunch of information automatically comes to our pocket, which means we sometimes have to break free from the obsession with the project work.
+    </p>
+    <p style="font-size: 16px; text-indent: 1em">We can proudly say our integrated human practices helped us make progress in our project design. By integrating our human practices with the results from our wet lab experiments and modeling, iGEM2017 Team TokyoTech have executed our project with improved design in accordance with comments from general public, and have strengthened the public engagement of a two-way dialogue between our team and the public through this summer.
+    </p>
+  </div>
+
+<hr>
+
+<div class="w3-container" id="results" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Basic Human Practices</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+      <div class="w3-xxxlarge" style="padding-bottom: 10px;padding-top: 10px;text-align: center">
+
+        <p style="font-size: 16px">
+1) Organizing a symposium about synthetic biology for the public
+</p>
+
+
+  <p style="font-size: 16px; text-indent: 1em; padding-left: 2em">
+  On Oct 1st, we held an open symposium for middle school and high school students. We planned and managed the event and as guests, we invited three experts from microbiology (Prof. Oshima), synthetic biology (Prof. Kiga) and bioethics (Dr. Nudeshima). 
+  </p>
+
+<br>
+
+
+<p style="font-size: 16px;">
+2) Giving lectures about biosafety at local high schools
+</p>
+
+  <p style="font-size: 16px; text-indent: 1em; padding-left: 2em">
+  On September 2nd, we visited two high schools in Saitama Prefecture. We gave lectures and organized groupwork activities at both schools.
+  </p>
+
+<br>
+
+
+  <p style="font-size: 16px">
+  3) Attending Summer School (Theme: Social Epidemiology)
+  </p>
+
+  <p style="font-size: 16px; text-indent: 1em; padding-left: 2em">
+  On September 9th and 10th, some team members attended 5th Summer School of Japan Society of Research and Information on Public and Co-operative Economy. (The venue was Ritsumeikan University in Kyoto.) 
+  </p>
+
+
+      </div>
+  </div>
+
+  <hr>
+
+<div class="w3-container" id="results" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Integrated Human Practices</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+      <div class="w3-xxxlarge" style="padding-bottom: 10px;padding-top: 10px;text-align: center">
+      <figure>
+      <img src="http://2017.igem.org/wiki/images/c/cc/T--TokyoTech--integrated_roadmap_10221540.png" style="max-width:70%">
+      <figcaption style="font-size: 16px">Fig. 1 Roadmap of integrated human practices</figcaption>
+      </figure>
+      </div>
+  </div>
+  
+   <hr>
+
+<div class="w3-container" id="results" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Applications</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+      <div class="w3-xxxlarge" style="padding-bottom: 10px;padding-top: 10px;text-align: center">
+      
+      <p style="font-size: 16px">
+1) Coli watch
+</p>
+
+
+  <p style="font-size: 16px; text-indent: 1em; padding-left: 2em">
+  Cph1 of cyanobacteria is a transmembrane protein and has histidine kinase activity as AHK4 does. Histidine kinase activity of Cph1 is activated upon light exposure. If a chimera protein of Cph1 and AHK4 (Cph1-AHK4) is constructed and expressed in <span style="font-style: italic"><span style="font-style: italic">E. coli</span></span>, this protein will work as a novel photoreceptor. The Cph1-AHK4 chimera protein will induce transcription from the <span style="font-style: italic">cps</span> operon in response to light exposure.<br>
+Taken together, when the Ptet-<span style="font-style: italic">traI</span>, Ptet-<span style="font-style: italic">cph1</span>/AHK4, and P<span style="font-style: italic">cps</span>-<span style="font-style: italic">rfp</span> gene cassettes are introduced to <span style="font-style: italic"><span style="font-style: italic">E. coli</span></span>, the cells change color depending on light.<br>
+By wearing the above mentioned <span style="font-style: italic"><span style="font-style: italic">E. coli</span></span> cells on our wrist skin cells, we can see the color change according to the intensity of the light.We named this light sensible <span style="font-style: italic"><span style="font-style: italic">E. coli</span></span> “Coli watch.”
+
+  </p>
+
+<br>
+
+      <figure>
+      <img src="http://2017.igem.org/wiki/images/6/65/T--TokyoTech--ColiWatch.png" style="max-width:70%">
+      <figcaption style="font-size: 16px">Fig. 2 Coli watch</figcaption>
+      </figure>
+      </div>
+  </div>
+  
+  <br>
+
+
+<p style="font-size: 16px;">
+2) Therapy
+</p>
+
+  <p style="font-size: 16px; text-indent: 1em; padding-left: 2em">
+  Recently, we have found many studies on gene therapies and Drug Delivery System (DDS) to anaerobic solid cancer. These treatments were carried out using the anaerobic bacteria harboring anti-cancer drug genes. However, there are two problems for these treatments; (i) it is difficult to transduce genes to specific human cells, (ii) the effect of the anti-cancer bacteria is not permanent, because the anti-cancer bacteria lose niches by killing cancer cells.
+When the cancer recurs, re-administration of the anti-cancer bacteria is needed. Such repeated treatments involve pain and economic burden as well as putting patients in danger.
+Thus, through introducing the following genes, anti-cancer <span style="font-style: italic">E. coli</span> is expected to stay at a least concentration for a long period.<br>
+(i) introducing the chimeric transcription factor (<span style="font-style: italic">relA-traR</span>) and the iP synthesis enzymes (<span style="font-style: italic">atIPT4, log1</span>) to human cells.<br>
+(ii) introducing Ptet-<span style="font-style: italic">traI</span>, Ptet-<span style="font-style: italic">AHK4</span>, and P<span style="font-style: italic">cps-mazF</span> to <span style="font-style: italic">E. coli</span> cells.<br>
+(iii) introducing a sensor protein gene to detect cancer cell-specific metabolites to <span style="font-style: italic">E. coli</span> cells. Concerning the above point (iii), one preceding study implies the existence of such metabolites that attract bacteria [1]. As a consequence, the <span style="font-style: italic">E. coli</span> cells promptly respond to cancerous recurrence. Therefore, patients will be released from the anxiety of recurrence or frequent checkup, improving the patients’ QOL. For not only cancer but also other diseases  that easily recurrence, similar therapeutic <span style="font-style: italic">E. coli</span> can be settled for prompt and repeated healing. Our co-cultivation technology seems to give a new possibility of medical treatment and of living with diseases. The detailed mechanisms are described below (Fig. 3).
+<br><br>
+<u>Step1</u> Introduce the  gene of the chimeric transcription factor (relA/traR, constitutive expression) and iP synthesis genes (atIPT4 and log1, inducible expression).<br>
+<u>Step2</u> Administer the <span style="font-style: italic">E. coli</span> cells harboring the following three genes; the anti-cancer genes, the C8 synthase gene (<span style="font-style: italic">traI</span>), and the iP receptor gene (<span style="font-style: italic">ahk4</span>). <br>
+<u>Step3</u> The <span style="font-style: italic">E. coli</span> cells that are grown at a central part of anaerobic solid cancer and kill the cancer. <br>
+<u>Step4</u> As the cancer cells are killed, the transduced human cells sense the increased number of <span style="font-style: italic">E. coli</span> cells.<br>
+<u>Step5</u> Transduced human cells produce and secrete iP as an <span style="font-style: italic">E. coli</span> proliferation inhibitor.<br>
+<u>Step6</u> Suppress the excessive growth of <span style="font-style: italic">E. coli</span>.<br>
+<u>Step7</u> If the cancer recurs, the <span style="font-style: italic">E. coli</span> cells detect cancer-specific metabolites, move to the cancer, and resume growing to increase their niche. <br>
+<u>Step8</u> The <span style="font-style: italic">E. coli</span> cells kill the cancer again, and the transduced human cells inhibit the excessive growth of <span style="font-style: italic">E. coli</span> cells. The cell concentration balance between human and <span style="font-style: italic">E. coli</span> cells is sustained. <br><br>
+
+ Co-culture with bacteria and Immune system
+When human and bacterial cells are allowed to co-existed artificially,  negative influence of bacteria on human health is concerned and whether the bacteria are killed by the human immune system is unclear. However, in this system, we do not aim to introduce bacteria inside human cells but aimed extracellular co-existence. Therefore, it is considered that:<br>
+- Human and bacterial cells co-exist only extracellularly and the influence of the immune system is not needed to consider.<br>
+- If bacteria excessively grow, the growth will be suppressed by the proliferation inhibition system.<br>
+- If bacteria get too close to human cells like invading human cells, human cells sense it and an immune reaction occurs. However, this immune reaction is too weak to lead extermination of bacteria. <br>
+
+  </p>
+  <div class="w3-xxxlarge" style="padding-bottom: 10px;padding-top: 10px;text-align: center">
+    	<figure>
+    	<img src="http://2017.igem.org/wiki/images/b/b9/T--TokyoTech--cancertherapy.png" style="max-width:85%">
+    	<figcaption style="font-size: 16px">Fig. 3 Model of cancer therapy by co-existnce with anti-cancer bacteria</figcaption></figure>
+    	</div>
+
+<p style="font-size: 16px;">
+3) Photosynthesis
+</p>
+
+<p style="font-size: 16px; text-indent: 1em; padding-left: 2em">
+We human beings are heterotrophs, and it has long been a dream to make energy ourselves through photosynthesis. In recent years, some studies have been carried out in which genetically modified cyanobacteria are co-cultured with human cardiomyocytes to build a complete heart. These co-cultures aim to supply sufficient oxygen from cyanobacteria to all human cells, even when forming a three-dimensional structure [2].</p>
+<p style="font-size: 16px; text-indent: 1em; padding-left: 2em">In other words, if we could co-exist with photosynthetic bacteria, we could obtain energy by ourselves as well as constructing organs in three dimensions. In addition, if livestock animals and photosynthetic bacteria could co-exist,  the feed cost could be reduced drastically.</p>
+<p style="font-size: 16px; text-indent: 1em; padding-left: 2em">However, in the above scheme, generation of reactive oxygen species (ROS) is inevitable, and the human cells are damaged by ROS. If photosynthetic bacteria co-exist in animals that originally do not possess photosynthetic functions, a mechanism to suppress photosynthesis is necessary. Therefore, by incorporating the co-culture system we established to the above scheme, it is expected that overgrowth and photosynthesis of photosynthetic bacteria and generation of ROS can be suppressed.
+</p>
+
+
+<hr>
+
+<div class="w3-container" id="results" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Reference</b></h1>
+<hr style="width:50px;border:5px solid red" class="w3-round">
+
+<p style="font-size: 16px; text-indent: 1em">[1]Potential role of intratumor bacteria in mediating tumor resistance to the chemotherapeutic drug gemcitabine (2017)  Science  15 Sep 2017: Vol. 357, Issue 6356, pp. 1156-1160</p>
+<p style="font-size: 16px; text-indent: 1em">[2]An innovative biologic system for photon-powered myocardium in the ischemic heart (2017) Science Advances  14 Jun 2017:
+Vol. 3, no. 6, e1603078</p>
+
+
+<hr>
+
+
+
+</div>
+
+ <div class="w3-container" id="contact" style="margin-top:20px">
+ <p id="pageTop" style="text-align:right"><a href="#wrap"><img src="http://2017.igem.org/wiki/images/0/0d/T--TokyoTech--page_top_2.png" style="width:200px"></a></p>
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"><a href="http://96haji.me/" title="W3.CSS" target="_blank" class="w3-hover-opacity">Hajime Fujita with W3.CSS: All Rights Reserved</a></p></div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+$(function() {
+  var h = $(window).height();
+ 
+  $('#wrap').css('display','none');
+  $('#loader-bg ,#loader').height(h).css('display','block');
+});
+ 
+$(window).load(function () { //全ての読み込みが完了したら実行
+  $('#loader-bg').delay(900).fadeOut(800);
+  $('#loader').delay(600).fadeOut(300);
+  $('#wrap').css('display', 'block');
+});
+</script>
+<script>
+//■page topボタン
+$(function(){
+var topBtn=$('#pageTop');
+topBtn.hide();
+ 
+//◇ボタンの表示設定
+$(window).scroll(function(){
+  if($(this).scrollTop()>80){
+    //---- 画面を80pxスクロールしたら、ボタンを表示する
+    topBtn.fadeIn();
+  }else{
+    //---- 画面が80pxより上なら、ボタンを表示しない
+    topBtn.fadeOut();
+  } 
+});
+ 
+// ◇ボタンをクリックしたら、スクロールして上に戻る
+topBtn.click(function(){
+  $('body,html').animate({
+  scrollTop: 0},500);
+  return false;
+});
+
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,487 @@
+{{TokyoTech/css/reset}}
+{{TokyoTech/css/main}}
+<!DOCTYPE html>
+<html>
+<title>Coli Sapiens</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Arial", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<div id="loader-bg">
+  <div id="loader">
+    <div class="photo-show">
+    <img src="http://2017.igem.org/wiki/images/f/f4/T--TokyoTech--load_1.png" width="600">
+    <img src="http://2017.igem.org/wiki/images/4/43/T--TokyoTech--load_2.png" width="600">
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:20px">Close Menu</a>
+  <div class="w3-container" style="margin-top: 20px;margin-bottom: 25px" id="wrap">
+    <img src="http://2017.igem.org/wiki/images/a/a8/T--TokyoTech--logo_white_bright_10211603.png" style="width: 100%">
+  </div>
+
+  <div style="padding-top: 15px; padding-left: 25px; id="wrap">
+
+  <div id="contents" style="z-index: 10">
+
+    <ul class="click_menu_checkbox vertm_down">
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px;">
+    <input type="checkbox" id="vmcb-a" />
+    <label for="vmcb-a"><a href="http://2017.igem.org/Team:TokyoTech">Home</a></label>
+    </li>
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-b" />
+    <label for="vmcb-b"><a href="http://2017.igem.org/Team:TokyoTech/Medal">Achievements</a></label>
+    </li>
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-c" />
+    <label for="vmcb-c"><a>Project</a></label>
+     <ul>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Description" class="w3-bar-item w3-button w3-hover-white">Description</a></li>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Project/Basic_Parts" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Basic Parts</a></li>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Project/Composite_Parts" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Composite Parts</a></li>
+    </ul>
+    </li>
+
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-d" />
+    <label for="vmcb-d"><a>Experiment</a></label>
+     <ul>
+
+        <li>
+        <input type="checkbox" id="vmcb-d1" />
+        <label for="vmcb-d1"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Overview" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="text-align: center;">Overview</a></label>
+        </li>
+
+        <li style="padding-bottom: 10px; padding-top: 5px">
+        <input type="checkbox" id="vmcb-d2" />
+          <label for="vmcb-d2"><a style="text-align: center;">Bacteria to <br>Human Cells ▼</a></label>
+            <ul>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">TraI Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Improvement" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">TraI Improvement <br>Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraR_Reporter_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" >TraR Reporter <br>Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Transcriptome_Analysis" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Transcriptome <br>Analysis</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Chimeric_Transcription_Factor" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Chimeric <br> Transcription <br> Factor Assay</a></li>
+            </ul>
+      </li>
+
+      <li style="padding-bottom: 3px">
+      <input type="checkbox" id="vmcb-d3" />
+    <label for="vmcb-d3"><a style="text-align: center;">Human Cells to <br>Bacteria ▼</a></label>
+        <ul>
+          <li><a href="http://2017.igem.org/Team:TokyoTech/Experiment/AHK4_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">AHK4 Assay</a></li>
+          </ul>
+        </li>
+
+        <li>
+        <input type="checkbox" id="vmcb-d4" />
+    <label for="vmcb-d4"><a href="http://2017.igem.org/Team:TokyoTech/InterLab" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="text-align: center;">InterLab</a></label>
+        </li>
+    </ul>
+    </li>
+
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-e" />
+    <label for="vmcb-e"><a href="http://2017.igem.org/Team:TokyoTech/Model">Modelling</a></label>
+    </li>
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-f" />
+    <label for="vmcb-f"><a>Human Practices</a></label>
+    <ul>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Overview</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP/Silver" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Silver</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP/Gold_Integrated" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gold (Integrated)</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Demonstrate" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Demonstrate</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Collaborations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Collaborations</a></li>
+    </ul>
+    </li>
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-g" />
+    <label for="vmcb-g"><a>About us</a></label>
+    <ul>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Team</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Attributions" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Attributions</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Sponsors" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sponsors</a></li>
+    </ul>
+    </li>
+    </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()"><img src="http://www.adultb2b.biz/wp-content/themes/adultb2b%20-%20new/assets/images/menuBtn.png" style="width: 30px"></a>
+  <span style="padding-top: 5px">iGEM Tokyo Tech</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+<div class="w3-container" id="contact" style="margin-top:30px"><!-- ページタイトル -->
+      <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px" align="center">Project Description</h1>
+    </div>
+
+<hr>
+
+<div class="w3-container" id="contact" style="margin-top:30px">
+        <h2 class="w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><span>Contents</span></h1>
+        <h3 style="text-indent: 1em;font-size: 16px"><a href="#intro">i. Introduction</a></h3>
+        <h3 style="text-indent: 1em;font-size: 16px"><a href="#goal">ii. Goal and Approach</a></h3>
+        <h3 style="text-indent: 1em;font-size: 16px"><a href="#mecha">iii. Mechanism</a></h3>
+        <h3 style="text-indent: 1em;font-size: 16px"><a href="#result">iv. Results</a></h3>
+        <h3 style="text-indent: 1em;font-size: 16px"><a href="#hp">v. Human Practices</a></h3>
+    </div>
+
+<hr>
+
+  <!-- Overview -->
+  <div class="w3-container" id="intro" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Introduction</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <p style="font-size:16px;font-size: 16px; text-indent:1em">
+    How can we define a human organism? Is it simply a group of human cells? It's said that in our body, there exist not only 3.0*10<sup>13</sup> human cells but also 3.8*10<sup>13</sup> bacteria. That means the mass of bacteria reaches 0.2 kg. In other words, humans are not solely composed of human cells. However, in iGEM community, it's been a standard to use single organism in project and it's not an overstatement that most teams don't take it into account that in a real world, multiple kinds of organisms co-exist and the ecosystem is sustained by their mutual dependence. Therefore, to target "true human organism", it's necessary to establish the system that human cells and bacteria co-exist under in vitro conditions. Therefore, we decided to establish co-culture system between human cells and bacteria.</p>
+
+     <p style="font-size:16px;font-size: 16px; text-indent:1em">
+    If we can establish a co-culture system, we can find a way to achieve population balance to sustain the co-existence and apply for a medical field like a cancer treatment. If you can co-exist with photosynthetic bacteria or nitrogen fixing bacteria, you can photosynthesize or produce protein from air. If you could co-exist with bacteria, you could be a super human. We named this new type of human 'Coli Sapiens.' 
+    </p>
+
+  </div>
+
+<hr>
+
+  <div class="w3-container" id="goal" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Goal and Approach</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+<p style="font-size:16px;text-indent: 1em; padding-bottom: 15px">Our original goals are as follows:</p>
+
+<center>
+<div style="padding: 10px; margin-bottom: 10px; border: 1px dotted #333333;width: 90%; border-radius: 10px;">
+<h3 style="text-align: center; padding-bottom: 15px">
+Establishing an artificial cross-kingdom communication system between human cells and bacteria.</h3>
+
+<p style="font-size:16px;font-size: 16px; text-indent:1em;text-align: center;">
+    To achieve the first goal,</b> we needed a new cell-to-cell communication system because native and direct communication systems between human cells and bacteria were little known. Thus, we decided to integrate signal transduction system among three kingdoms. 
+</p>
+
+</div>
+
+<div style="padding: 10px; margin-bottom: 10px; border: 1px dotted #333333;width: 90%; border-radius: 10px">
+<h3 style="text-align: center; padding-bottom: 15px">
+Creating a co-culture model using the cross-kingdom communication and designing ‘Coli Sapiens,’ a new type of human strengthened by bacteria</h3>
+
+<p style="font-size:16px;font-size: 16px; text-indent:1em;text-align: center;">
+    To achieve the second goal, we chose the essential parts in a complex co-culture system between bacteria and human cells. The reason why co-existence between them has not been developed under <span style="font-style: italic;">in vitro</span> conditions is that a growth rate of bacteria surpasses that of human cells. Thus, when we designed the mathematical model, we emphasized a population of bacteria as one of the biggest factors to establish a co-culture system.
+</p>
+</div>
+</center>
+
+</div>
+
+<hr>
+
+  <div class="w3-container" id="mecha" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Mechanism</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+      <p style="font-size:16px;font-size: 16px; text-indent:1em;padding-bottom: 15px">
+      We established the following two systems.
+      </p>
+      <center>
+      <div style="padding: 10px; margin-bottom: 3px; border: 1px dotted #333333;width: 90%; border-radius: 10px">
+      <h4 style="text-align: center">Signal transduction system from bacteria to humans</h4>
+      <h5 style="text-align: center">~ Integration of systems derived from bacteria and humans ~</h5>
+      <p style="font-size:16px;font-size: 16px; text-indent:1em;padding-top: 15px">
+      In this signal transduction system, the transcription level is controlled by integrating quorum sensing (bacterial cell-to-cell communication) and NF-kB, transcription factor in mammalian cell. We used this system the signal transduction from bacteria to human cells.
+      </p>
+      <div class="w3-xxxlarge" style="padding-bottom: 3px;text-align: center">
+      <figure>
+      <img src="http://2017.igem.org/wiki/images/e/e6/T--TokyoTech--bacteriatohuman.png" style="max-width:80%">
+      <figcaption style="font-size: 16px">Fig. 1 Mechanism of signal transduction system from bacteria to human</figcaption>
+      </figure>
+      </div>
+
+      
+       <div onclick="obj=document.getElementById('menu1').style; obj.display=(obj.display=='none')?'block':'none';" style="text-align: center;" style="margin-bottom: 30px"><a style="cursor:pointer;"><button class="w3-button w3-red w3-padding-large w3-hover-black" style="font-size: 20px; margin-bottom: 30px">▼ Click here for more detail</button></a></div>
+
+       <div id="menu1" style="display:none;clear:both;padding-top: 20px;text-align: center;">
+        <p style="font-size: 16px; ">
+    <u>Step1</u>: We transduced <span style="font-style: italic">traI</span> which codes C8 synthetase and as <span style="font-style: italic">E. coli</span> grow, C8 is synthesized and secreted. In human cells, the following two genes are transduced. In the fusional protein, TraR works as a DNA-binding domain and a part of RelA works as a chimeric transcription factor.
+    </p>
+    <p style="font-size: 16px; "><u>Step2</u>: After the complex receives C8, the chimeric transcription factor structurally changes and the active dimer is formed.
+    </p>
+
+    <p style="font-size: 16px; "><u>Step3</u>: TraR in the active factor binds tra box located upstream of the target gene.
+    </p>
+
+    <p style="font-size: 16px; "><u>Step4</u>: RelA Trans Activation Domain (TAD) activates CMV minimal promoter and the expression of the downstream gene is induced. As a result, iP is produced and diffuses out of the cell.
+    </p>
+       </div>
+     
+
+      </div>
+      
+      <br>
+
+      <div style="padding: 10px; margin-bottom: 10px; border: 1px dotted #333333;width: 90%;border-radius: 10px">
+       <h4 style="text-align: center">Signal transduction system from human cells to bacteria</h4>
+       <h5>~ Integration of systems derived from bacteria and plants ~</h5>
+
+      <p style="font-size:16px;font-size: 16px; text-indent:1em;padding-top: 15px">
+      In this signal transduction system, the transcription level is controlled by integrating signal transduction systems derived from bacteria and plants. We used this system the signal transduction from human cells to bacteria.
+      </p>
+      <div class="w3-xxxlarge" style="padding-bottom: 10px;text-align: center">
+      <figure>
+      <img src="http://2017.igem.org/wiki/images/5/5a/T--TokyoTech--humantobacteria.png" style="width:80%">
+      <figcaption style="font-size: 16px">Fig. 2 Mechanism of signal transduction system from human cells to bacteria</figcaption>
+      </figure>
+      </div>
+
+      <div onclick="obj=document.getElementById('menu2').style; obj.display=(obj.display=='none')?'block':'none';" style="text-align: center;" style="margin-bottom: 30px"><a style="cursor:pointer;"><button class="w3-button w3-red w3-padding-large w3-hover-black" style="font-size: 20px; margin-bottom: 30px">▼ Click here for more detail</button></a></div>
+
+       <div id="menu2" style="display:none;clear:both;padding-top: 20px;text-align: center;">
+        <p style="font-size: 16px; ">
+        <u>Step1</u>: AHK4 binding to iP performs an autophosphorylation reaction, transferring a phosphoryl group from ATP to a histidine residue of Histidine kinase (HK) domain. AHK4 transfers the phosphoryl group to its own internal receiver domain.
+        </p>
+        <p style="font-size: 16px; "><u>Step2</u>: The phosphoryl group of AHK4 is transferred the histidine-containing phosphotransmitter, RcsD.
+        </p>
+
+        <p style="font-size: 16px; "><u>Step3</u>: The phosphoryl group of RcsD is transferred the RcsB and RcsB is activated. Activated RcsB and another RR, RcsA form a hetero dimer and bind to cps operon promoter (which controls the production of polysaccharides). This series of phosphoryl group transmission is called the His-to-Asp phosphorelay (Read <a href=http://2017.igem.org/Team:TokyoTech/Experiment/AHK4_Assay>AHK4 Assay</a> page).
+        </p>
+
+        <p style="font-size: 16px; "><u>Step4</u>: The transcription of the gene downstream cps operon promoter is activated. In our genetic circuits, the gene downstream cps operon promoter is <span style="font-style: italic;">mazF</span>. <span style="font-style: italic;">mazF</span> is the gene of  a toxin-antitoxin system. Please read <a href=http://2017.igem.org/Team:TokyoTech/Model>Modelling</a> page about the details of toxin-antitoxin system and <span style="font-style: italic;">mazF</span>.
+        </p>
+       </div>
+
+      </div>
+
+<br>
+
+      <div style="padding: 10px; margin-bottom: 10px; border: 1px dotted #333333;width: 90%;border-radius: 10px">
+       <h4 style="text-align: center">Co-culture system</h4>
+
+      <p style="font-size:16px;font-size: 16px; text-indent:1em;padding-top: 15px">
+      We conducted experiments to validate the two systems above. Based on the results, we virtually integrated the two systems and conducted population change simulations.
+      </p>
+      <div class="w3-xxxlarge" style="padding-bottom: 10px;text-align: center">
+      <figure>
+      <img src="http://2017.igem.org/wiki/images/a/a9/T--TokyoTech--circuit_map.jpg" style="width:80%">
+      <figcaption style="font-size: 16px">Fig. 3 Mechanism of co-culture system</figcaption>
+      </figure>
+      </div>
+
+      <div style="text-align: center;" style="margin-bottom: 30px"><a href="http://2017.igem.org/Team:TokyoTech/Model" target="_blank"><button class="w3-button w3-red w3-padding-large w3-hover-black" style="font-size: 20px; margin-bottom: 30px">Go to Modelling Page</button></a></div>
+
+      </div>
+
+      </center>
+
+    </div>
+<hr>
+
+    <div class="w3-container" id="result" style="margin-top:20px">
+    <h2 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Results</b></h2>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+
+    <h3 style="text-align: center; margin-top:40px;margin-bottom:20px"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Improvement">TraI Improvement</a></h3>
+
+    <p style="font-size:16px;font-size: 16px; text-indent:1em">At an early stage of our project, we simulated the whole co-culture system using parameters from the C8 production rate of <span style="font-style: italic">E. coli</span>, the iP production rate of human cells and growth inhibition rate of <span style="font-style: italic">mazF</span>. The simulation showed that the C8 production rate is not enough to induce the iP production and as a result, <span style="font-style: italic">E. coli</span> overgrow.
+    </p><br>
+
+    <p style="font-size:16px;font-size: 16px; text-indent:1em">To increase the C8 production rate, we improved the previous genetic circuits in two ways.
+    </p>
+
+    <ul style="padding-left: 2em">
+      <li style="font-size: 16px">- 
+        Introducing various point mutations into CDS of the <span style="font-style: italic">traI</span> gene and finding a strain whose C8 production rate increases
+      </li>
+      <li style="font-size: 16px">- 
+        Adding SAM (one of the C8 materials) to culture medium and promoting the C8 production
+      </li>
+    </ul><br>
+
+    <p style="font-size:16px;font-size: 16px; text-indent:1em">As a result of the improvement, the concentration of C8 which <span style="font-style: italic">E. coli</span> produce increased by about 3-fold and it has been possible to induce iP synthesis in human cells from an early stage of <span style="font-style: italic">E. coli</span>'s growth.
+    </p><br>
+<center>
+<figure>
+ <img src="http://2017.igem.org/wiki/images/3/32/T--TokyoTech--TraIimprove50.jpg" style="max-width:50%">
+     <figcaption style="font-size: 16px">Fig. 4 Improvement of C8 production by the K34G mutant (37℃ culture)</figcaption>
+     </figure>
+</center>
+
+<hr>
+
+  <h3 style="text-align: center; margin-top:40px;margin-bottom:20px"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Chimeric_Transcription_Factor">Chimeric Transcription Factor</a></h3>
+
+
+    <p style="font-size:16px;font-size: 16px; text-indent:1em"> As for human cells' constructs, we synthesized chimeric transcription factor and iP synthetase genes. In the assay, first, we transduced the constructs. Then, we cultured the cells in which the constructs are successfully transduced and added C8 from <span style="font-style: italic">E. coli</span>. After the addition, we checked the transcription of <span style="font-style: italic">atIPT4</span> and <span style="font-style: italic">log1</span> (part of iP synthetase genes) using transcriptome analysis. From this result, we concluded that human cells received C8 from bacteria and successfully produced iP.
+    </p>
+<center>
+<div class="w3-xxxlarge" style="padding-bottom: 10px;padding-top: 10px;text-align: center">
+     <figure>
+     <img src="http://2017.igem.org/wiki/images/e/e9/Human_cell_result_v3.png" style="max-width:85%">
+     <figcaption style="font-size: 16px">Fig. 5 Result of the qualitative experiment</figcaption>
+     </figure>
+     </div>
+    <p style="font-size: 16px">
+  The term “Cont” means the control cells that are not electroporated, while “EP” means the electroporated cells. The concentrations of added C8 are indicated below the bars. 
+ </p>
+</center>
+
+<hr>
+
+<h3 style="text-align: center; margin-top:40px;margin-bottom:20px"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/AHK4_Assay">AHK4 Assay</a></h3>
+
+
+    <p style="font-size:16px;font-size: 16px; text-indent:1em">We transduced <span style="font-style: italic">ahk4</span> into <span style="font-style: italic">E. coli</span> (KMI002 strain) and cultured them. Then, we added iP and after AHK4 received iP, cps promoter was activated and downstream <span style="font-style: italic">lacZ</span> is expressed. (<span style="font-style: italic">lacZ</span> expression was confirmed by blue-white screening.) In conclusion, it turned out that AHK4 can receive iP and induce the gene expression of the downstream genes, which means in a larger scale, <span style="font-style: italic">E. coli</span> can receive growth inhibition factors from human cells and inhibit the own growth. 
+    </p><br>
+
+<center>
+<div class="w3-xxxlarge" style="padding-bottom: 10px;padding-top: 10px;text-align: center">
+     <figure>
+     <img src="http://2017.igem.org/wiki/images/archive/c/c7/20171028045916%21T--TokyoTech--AHK4qualitive.png" style="max-width:80%">
+     <figcaption style="font-size: 16px">Fig. 6  Result of the qualitative experiment</figcaption> </figure>
+        <p style="font-size:16px;font-size: 16px; text-indent:1em">Cells were grown at room temperature on LB agar plates with and without iP. β-galactosidase activity was monitored by X-gal. Photographs were taken after 25h incubation.</p>
+     
+     </div>
+</center>
+
+<hr>
+
+
+
+<h4 style="text-align: center;margin-top:40px"><a href="http://2017.igem.org/Team:TokyoTech/Model">Simulation</a></h4>
+
+    <p style="font-size:16px;font-size: 16px; text-indent:1em">We again simulated the whole co-culture system using the parameter from assay data. The simulation showed that human cells have potential to control the population of <span style="font-style: italic">E. coli</span>, and both population settle to an appropriate ratio. In Fig. 7, u means the number of human cells and f means the flow rate.
+
+    </p><br>
+
+<center>
+<div class="w3-xxxlarge" style="padding-bottom: 10px;text-align: center">
+      <figure>
+      <img src="http://2017.igem.org/wiki/images/f/f4/T--TokyoTech--oveall.png" style="max-width:60%">
+      <figcaption style="font-size: 16px">Fig. 7 Condition of co-existence </figcaption>
+      </figure>
+      </div>
+</center>
+
+
+    </div>
+
+<hr>
+
+    <div class="w3-container" id="hp" style="margin-top:20px">
+    <h2 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Human Practices</b></h2>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+      <div class="w3-xxxlarge" style="padding-bottom: 10px;padding-top: 10px;text-align: center">
+      <figure>
+      <img src="http://2017.igem.org/wiki/images/f/f8/T--TokyoTech--interaction_complete.png" style="max-width:95%">
+      <figcaption style="font-size: 16px">Fig. 8 Roadmap: How we integrated Human Practices and our experiment</figcaption>
+      </figure>
+      </div>
+
+      <p style="font-size: 16px; text-indent: 1em;padding-bottom:20px">
+        From our full year experience in iGEM, we realized the necessity of verifying from a different point of view. In other words, we realized that we researchers ourselves must also continuously reflect on the risks and costs & benefits of the science we discover. In the workshop that we attended as our initial activity in iGEM, we learned from social scientists, the danger of grounding on the deficit model, which fixes on the idea that the general public is ignorant, and the importance of the two-way dialogue between society and researchers.
+      </p>
+
+      <div style="text-align: center;" style="margin-bottom: 30px;margin-top:20px"><a href="http://2017.igem.org/Team:TokyoTech/HP" target="_blank"><button class="w3-button w3-red w3-padding-large w3-hover-black" style="font-size: 20px; margin-bottom: 30px;margin-top:20px">Go to <br>Human Practices <br>Page</button></a></div>
+
+    </div>
+
+  </div>
+
+
+<!-- End page content -->
+</div>
+
+ <div class="w3-container" id="contact" style="margin-top:20px">
+ <p id="pageTop" style="text-align:right"><a href="#wrap"><img src="http://2017.igem.org/wiki/images/0/0d/T--TokyoTech--page_top_2.png" style="width:200px"></a></p>
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"><a href="http://96haji.me/" title="W3.CSS" target="_blank" class="w3-hover-opacity">Hajime Fujita with W3.CSS: All Rights Reserved</a></p></div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+$(function() {
+  var h = $(window).height();
+ 
+  $('#wrap').css('display','none');
+  $('#loader-bg ,#loader').height(h).css('display','block');
+});
+ 
+$(window).load(function () { //全ての読み込みが完了したら実行
+  $('#loader-bg').delay(900).fadeOut(800);
+  $('#loader').delay(600).fadeOut(300);
+  $('#wrap').css('display', 'block');
+});
+</script>
+<script>
+//■page topボタン
+$(function(){
+var topBtn=$('#pageTop');
+topBtn.hide();
+ 
+//◇ボタンの表示設定
+$(window).scroll(function(){
+  if($(this).scrollTop()>80){
+    //---- 画面を80pxスクロールしたら、ボタンを表示する
+    topBtn.fadeIn();
+  }else{
+    //---- 画面が80pxより上なら、ボタンを表示しない
+    topBtn.fadeOut();
+  } 
+});
+ 
+// ◇ボタンをクリックしたら、スクロールして上に戻る
+topBtn.click(function(){
+  $('body,html').animate({
+  scrollTop: 0},500);
+  return false;
+});
+
+});
+</script>
+
+</body>
+</html>

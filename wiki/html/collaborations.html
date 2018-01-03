@@ -1,0 +1,299 @@
+{{TokyoTech/css/reset}}
+{{TokyoTech/css/main}}
+<!DOCTYPE html>
+<html>
+<title>Coli Sapiens</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Arial", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<div id="loader-bg">
+  <div id="loader">
+    <div class="photo-show">
+    <img src="http://2017.igem.org/wiki/images/f/f4/T--TokyoTech--load_1.png" width="600">
+    <img src="http://2017.igem.org/wiki/images/4/43/T--TokyoTech--load_2.png" width="600">
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:20px">Close Menu</a>
+  <div class="w3-container" style="margin-top: 20px;margin-bottom: 25px" id="wrap">
+    <img src="http://2017.igem.org/wiki/images/a/a8/T--TokyoTech--logo_white_bright_10211603.png" style="width: 100%">
+  </div>
+
+  <div style="padding-top: 15px; padding-left: 25px; id="wrap">
+
+  <div id="contents" style="z-index: 10">
+
+    <ul class="click_menu_checkbox vertm_down">
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px;">
+    <input type="checkbox" id="vmcb-a" />
+    <label for="vmcb-a"><a href="http://2017.igem.org/Team:TokyoTech">Home</a></label>
+    </li>
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-b" />
+    <label for="vmcb-b"><a href="http://2017.igem.org/Team:TokyoTech/Medal">Achievements</a></label>
+    </li>
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-c" />
+    <label for="vmcb-c"><a>Project</a></label>
+     <ul>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Description" class="w3-bar-item w3-button w3-hover-white">Description</a></li>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Project/Basic_Parts" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Basic Parts</a></li>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Project/Composite_Parts" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Composite Parts</a></li>
+    </ul>
+    </li>
+
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-d" />
+    <label for="vmcb-d"><a>Experiment</a></label>
+     <ul>
+
+        <li>
+        <input type="checkbox" id="vmcb-d1" />
+        <label for="vmcb-d1"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Overview" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="text-align: center;">Overview</a></label>
+        </li>
+
+        <li style="padding-bottom: 10px; padding-top: 5px">
+        <input type="checkbox" id="vmcb-d2" />
+          <label for="vmcb-d2"><a style="text-align: center;">Bacteria to <br>Human Cells ▼</a></label>
+            <ul>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">TraI Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Improvement" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">TraI Improvement <br>Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraR_Reporter_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" >TraR Reporter <br>Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Transcriptome_Analysis" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Transcriptome <br>Analysis</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Chimeric_Transcription_Factor" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Chimeric <br> Transcription <br> Factor Assay</a></li>
+            </ul>
+      </li>
+
+      <li style="padding-bottom: 3px">
+      <input type="checkbox" id="vmcb-d3" />
+    <label for="vmcb-d3"><a style="text-align: center;">Human Cells to <br>Bacteria ▼</a></label>
+        <ul>
+          <li><a href="http://2017.igem.org/Team:TokyoTech/Experiment/AHK4_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">AHK4 Assay</a></li>
+          </ul>
+        </li>
+
+        <li>
+        <input type="checkbox" id="vmcb-d4" />
+    <label for="vmcb-d4"><a href="http://2017.igem.org/Team:TokyoTech/InterLab" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="text-align: center;">InterLab</a></label>
+        </li>
+    </ul>
+    </li>
+
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-e" />
+    <label for="vmcb-e"><a href="http://2017.igem.org/Team:TokyoTech/Model">Modelling</a></label>
+    </li>
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-f" />
+    <label for="vmcb-f"><a>Human Practices</a></label>
+    <ul>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Overview</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP/Silver" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Silver</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP/Gold_Integrated" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gold (Integrated)</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Demonstrate" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Demonstrate</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Collaborations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Collaborations</a></li>
+    </ul>
+    </li>
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-g" />
+    <label for="vmcb-g"><a>About us</a></label>
+    <ul>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Team</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Attributions" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Attributions</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Sponsors" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sponsors</a></li>
+    </ul>
+    </li>
+    </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()"><img src="http://www.adultb2b.biz/wp-content/themes/adultb2b%20-%20new/assets/images/menuBtn.png" style="width: 30px"></a>
+  <span style="padding-top: 5px">iGEM Tokyo Tech</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+		<div class="w3-container" id="contact" style="margin-top:30px">
+			<h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 20px" align="center">Collaborations</h1>
+		</div>
+
+<hr>
+
+		<div class="w3-container" id="contact" style="margin-top:30px">
+				<h2 class="w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><span>Contents</span></h1>
+				<p style="text-indent: 1em;font-size: 16px"><a href="#ionis">1. Technical collaboration with IONIS-Paris</a></p>
+				<p style="text-indent: 1em;font-size: 16px"><a href="#asij">2. Mentoring Team ASIJ Tokyo</a></p>
+				<p style="text-indent: 1em;font-size: 16px"><a href="#bu">3. Meetup with Team KAIT Japan at Boston University </a></p>
+		</div>
+
+<hr>
+
+		<div class="w3-container" id="ionis" style="margin-top:30px">
+				<p style="font-family: Poppins;font-size: 25px">
+					<b>
+					1. Technical collaboration with Team IONIS-Paris
+					</b><!-- title -->
+				</p>
+				<hr style="width:50px;border:5px solid red" class="w3-round">
+
+				<p style="text-indent: 1em;font-size: 16px">
+				We met up with Nicolas, a member of Team IONIS-Paris at TokyoTech in July. In the meetup, he gave us a presentation about the project. In the presentation, it turned out that they need a temperture-selective promoter which we used last year, so we decided to offer them a Biobrick part (BBa_K1949001: Pcold-<span style="font-style: italic;">gfp</span>).
+				</p><!-- content -->
+
+				<p style="text-indent: 1em;font-size: 16px">
+				Instead of offering a BioBrick part, they, Team IONIS-Paris gave us advice about modelling. In particular, we wanted to know folding speeds of proteins that appear in our project. The modelling section in Team IONIS-Paris is familiar with PHYRE2 (Protein Fold Recognition Server), and they calculated all the folding speeds on it and gave us the results. The consultation was really helpful for us to predict the production rate of target protein and drew on the advice when we set parameters in our model.
+				</p><!-- content -->
+
+				<div class="w3-xxxlarge" style="padding-top: 10px;text-align: center">
+				      <figure>
+				      <img src="http://2017.igem.org/wiki/images/2/2d/T--TokyoTech--ionis2.jpg" style="max-width:70%">
+				      <figcaption style="font-size: 16px">Fig 1-1. Meetup with IONIS-Paris</figcaption>
+				      </figure>
+				</div>
+
+				<div class="w3-xxxlarge" style="padding-bottom: 10px;text-align: center">
+				      <figure>
+				      <img src="http://2017.igem.org/wiki/images/2/2f/T--TokyoTech--ionis_1102.png" style="max-width:70%">
+				   　<figcaption style="font-size: 16px">Fig 1-2. Comment from IONIS-Paris 2017's wikipage</figcaption>
+				      </figure>
+				</div>
+
+
+		</div>
+
+		<hr>
+
+		<div class="w3-container" id="asij" style="margin-top:30px">
+				<p style="font-family: Poppins;font-size: 25px">
+					<b>
+					2. Mentoring Team ASIJ Tokyo
+					</b><!-- title -->
+				</p>
+				<hr style="width:50px;border:5px solid red" class="w3-round">
+				<p style="text-indent: 1em;font-size: 16px">
+				Our team mentored Team ASIJ Tokyo when we met up on September 23rd. Team ASIJ Tokyo is a very young team and it's the second time to participate in iGEM competition. Most of the team members are not familiar with scientific research and iGEM culture, so we gave them advice about the modeling of the data and the improvement of their qualitative analysis, as well as guidance for how to best represent their project motivations and research.
+				</p><!-- content -->
+
+				<div class="w3-xxxlarge" style="padding-bottom: 10px;padding-top: 10px;text-align: center">
+				      <figure>
+				      <img src="http://2017.igem.org/wiki/images/8/8a/T--TokyoTech--asij.JPG" style="max-width:70%">
+				      <figcaption style="font-size: 16px">Fig. 2 Meetup with Team ASIJ Tokyo</figcaption>
+				      </figure>
+				</div>
+		</div>
+
+		<hr>
+
+
+		<div class="w3-container" id="bu" style="margin-top:30px">
+				<p style="font-family: Poppins;font-size: 25px">
+					<b>
+					3. Meetup (Practice Session) at Boston University
+					</b><!-- title -->
+				</p>
+				<hr style="width:50px;border:5px solid red" class="w3-round">
+				<p style="text-indent: 1em;font-size: 16px">
+				On November 8th, 2017, our team hosts a meetup in Boston University. We are looking forward to sharing ideas with other iGEM teams. Each team will have the opportunity to present their projects and exchange their ideas in detail with other iGEM teams and faculty advisors right before the Giant Jamboree.
+				</p><!-- content -->
+
+				<div class="w3-xxxlarge" style="padding-bottom: 10px;padding-top: 10px;text-align: center">
+				      <figure>
+				      <img src="http://2016.igem.org/wiki/images/e/e1/T--KAIT_Japan--logo.jpg" style="max-width:70%">
+				      <figcaption style="font-size: 16px">Fig. 3 Meetup with Team KAIT Japan</figcaption>
+				      </figure>
+				</div>
+		</div>
+
+
+</div><!-- end -->
+
+ <div class="w3-container" id="contact" style="margin-top:20px">
+ <p id="pageTop" style="text-align:right"><a href="#wrap"><img src="http://2017.igem.org/wiki/images/0/0d/T--TokyoTech--page_top_2.png" style="width:200px"></a></p>
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"><a href="http://96haji.me/" title="W3.CSS" target="_blank" class="w3-hover-opacity">Hajime Fujita with W3.CSS: All Rights Reserved</a></p></div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+$(function() {
+  var h = $(window).height();
+ 
+  $('#wrap').css('display','none');
+  $('#loader-bg ,#loader').height(h).css('display','block');
+});
+ 
+$(window).load(function () { //全ての読み込みが完了したら実行
+  $('#loader-bg').delay(900).fadeOut(800);
+  $('#loader').delay(600).fadeOut(300);
+  $('#wrap').css('display', 'block');
+});
+</script>
+<script>
+//■page topボタン
+$(function(){
+var topBtn=$('#pageTop');
+topBtn.hide();
+ 
+//◇ボタンの表示設定
+$(window).scroll(function(){
+  if($(this).scrollTop()>80){
+    //---- 画面を80pxスクロールしたら、ボタンを表示する
+    topBtn.fadeIn();
+  }else{
+    //---- 画面が80pxより上なら、ボタンを表示しない
+    topBtn.fadeOut();
+  } 
+});
+ 
+// ◇ボタンをクリックしたら、スクロールして上に戻る
+topBtn.click(function(){
+  $('body,html').animate({
+  scrollTop: 0},500);
+  return false;
+});
+
+});
+</script>
+
+</body>
+</html>
