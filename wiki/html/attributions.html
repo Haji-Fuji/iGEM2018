@@ -1,0 +1,308 @@
+{{TokyoTech/css/reset}}
+{{TokyoTech/css/main}}
+<!DOCTYPE html>
+<html>
+<title>Coli Sapiens</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Arial", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<div id="loader-bg">
+  <div id="loader">
+    <div class="photo-show">
+    <img src="http://2017.igem.org/wiki/images/f/f4/T--TokyoTech--load_1.png" width="600">
+    <img src="http://2017.igem.org/wiki/images/4/43/T--TokyoTech--load_2.png" width="600">
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:20px">Close Menu</a>
+  <div class="w3-container" style="margin-top: 20px;margin-bottom: 25px" id="wrap">
+    <img src="http://2017.igem.org/wiki/images/a/a8/T--TokyoTech--logo_white_bright_10211603.png" style="width: 100%">
+  </div>
+
+  <div style="padding-top: 15px; padding-left: 25px; id="wrap">
+
+  <div id="contents" style="z-index: 10">
+
+    <ul class="click_menu_checkbox vertm_down">
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px;">
+    <input type="checkbox" id="vmcb-a" />
+    <label for="vmcb-a"><a href="http://2017.igem.org/Team:TokyoTech">Home</a></label>
+    </li>
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-b" />
+    <label for="vmcb-b"><a href="http://2017.igem.org/Team:TokyoTech/Medal">Achievements</a></label>
+    </li>
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-c" />
+    <label for="vmcb-c"><a>Project</a></label>
+     <ul>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Description" class="w3-bar-item w3-button w3-hover-white">Description</a></li>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Project/Basic_Parts" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Basic Parts</a></li>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Project/Composite_Parts" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Composite Parts</a></li>
+    </ul>
+    </li>
+
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-d" />
+    <label for="vmcb-d"><a>Experiment</a></label>
+     <ul>
+
+        <li>
+        <input type="checkbox" id="vmcb-d1" />
+        <label for="vmcb-d1"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Overview" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="text-align: center;">Overview</a></label>
+        </li>
+
+        <li style="padding-bottom: 10px; padding-top: 5px">
+        <input type="checkbox" id="vmcb-d2" />
+          <label for="vmcb-d2"><a style="text-align: center;">Bacteria to <br>Human Cells ▼</a></label>
+            <ul>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">TraI Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Improvement" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">TraI Improvement <br>Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraR_Reporter_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" >TraR Reporter <br>Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Transcriptome_Analysis" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Transcriptome <br>Analysis</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Chimeric_Transcription_Factor" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Chimeric <br> Transcription <br> Factor Assay</a></li>
+            </ul>
+      </li>
+
+      <li style="padding-bottom: 3px">
+      <input type="checkbox" id="vmcb-d3" />
+    <label for="vmcb-d3"><a style="text-align: center;">Human Cells to <br>Bacteria ▼</a></label>
+        <ul>
+          <li><a href="http://2017.igem.org/Team:TokyoTech/Experiment/AHK4_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">AHK4 Assay</a></li>
+          </ul>
+        </li>
+
+        <li>
+        <input type="checkbox" id="vmcb-d4" />
+    <label for="vmcb-d4"><a href="http://2017.igem.org/Team:TokyoTech/InterLab" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="text-align: center;">InterLab</a></label>
+        </li>
+    </ul>
+    </li>
+
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-e" />
+    <label for="vmcb-e"><a href="http://2017.igem.org/Team:TokyoTech/Model">Modelling</a></label>
+    </li>
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-f" />
+    <label for="vmcb-f"><a>Human Practices</a></label>
+    <ul>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Overview</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP/Silver" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Silver</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP/Gold_Integrated" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gold (Integrated)</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Demonstrate" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Demonstrate</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Collaborations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Collaborations</a></li>
+    </ul>
+    </li>
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-g" />
+    <label for="vmcb-g"><a>About us</a></label>
+    <ul>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Team</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Attributions" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Attributions</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Sponsors" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sponsors</a></li>
+    </ul>
+    </li>
+    </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()"><img src="http://www.adultb2b.biz/wp-content/themes/adultb2b%20-%20new/assets/images/menuBtn.png" style="width: 30px"></a>
+  <span style="padding-top: 5px">iGEM Tokyo Tech</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+
+<div class="w3-container" id="contact" style="margin-top:30px">
+      <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px" align="center">Attributions</h1>
+    </div>
+
+<hr>
+
+ <div class="w3-container" id="overview" style="margin-top:20px">
+        <p style="font-size: 16px">　We are proud to say that all the ideas we worked on this year were proposed by undergraduate members of iGEM 2017 team TokyoTech. We also want to thank all those advisors and instructors who helped us discuss these ideas and guided us through doing the experiments. The whole experimental data produced by our team comes from experiments all carried out by undergraduates.</p>
+</div>
+        
+<div class="w3-container" id="overview" style="margin-top:20px">
+        <p style="font-size: 16px">  The project "Coli Sapiens" was proposed by Hazuki Hasegawa and Hajime Fujita. </p>
+
+<hr>
+
+</div>
+
+
+<div class="w3-container" id="overview" style="margin-top:20px">
+        
+        <h2 style="margin-top: 10px">Members</h2>
+        <p style="font-size: 16px"><span style="font-weight: bold; border-bottom: solid 1px;">Performing all cloning (transformation, culture cells, mini prep)</span></p>
+        <p style="font-size: 16px"> - Hazuki Hasegawa, Kazunori Motai, Takuma Yasue, Kohei Umedera, Saki Arakaki</p>
+        
+        <p style="font-size: 16px"><span style="font-weight: bold; border-bottom: solid 1px;">Performing parts construction (restriction digest, ligation)</span></p>
+        <p style="font-size: 16px"> - Hazuki Hasegawa, Kazunori Motai, Takuma Yasue, Kohei Umedera, Saki Arakaki</p>
+        
+        <p style="font-size: 16px"><span style="font-weight: bold; border-bottom: solid 1px;">Performing TraI Assay</span></p>
+        <p style="font-size: 16px"> - Kazunori Motai</p>
+        
+        <p style="font-size: 16px"><span style="font-weight: bold; border-bottom: solid 1px;">Performing Human Cell Assay</span></p>
+        <p style="font-size: 16px"> - Saki Arakaki, Takuma Yasue</p>
+        
+        <p style="font-size: 16px"><span style="font-weight: bold; border-bottom: solid 1px;">Performing AHK4 assay</span></p>
+        <p style="font-size: 16px"> - Kohei Umedera</p>
+        
+        <p style="font-size: 16px"><span style="font-weight: bold; border-bottom: solid 1px;">Modelling</span></p>
+        <p style="font-size: 16px"> - Michio Takagi, Saki Arakaki, Hajime Fujita, Hazuki Hasegawa</p>
+        
+        <p style="font-size: 16px"><span style="font-weight: bold; border-bottom: solid 1px;">Wiki and slide design</span></p>
+        <p style="font-size: 16px"> - Hajime Fujita, Hazuki Hasegawa, Moe Takahashi, Kazuya Isawa with help from other team members</p>
+        
+        <p style="font-size: 16px"><span style="font-weight: bold; border-bottom: solid 1px;">Human Practices</span></p>
+        <p style="font-size: 16px"> - Hajime Fujita, Moe Takahashi, Kazuya Isawa, Hinako Kataoka, Hikaru Nakaya, Tamon Sato with help from other team members</p>
+
+<hr>
+
+</div>
+
+    
+
+
+  <div class="w3-container" id="overview" style="margin-top:20px">
+
+        <h2 style="margin-top: 10px">Contributions</h2>
+        <ul class="non_dotted_list">
+          <li><h2><span style="font-size: 20px">General Support</span></h2>
+            <p style="font-size: 16px"> - <span style="font-weight: bold;">Prof. Nakashima and Prof. Hayashi</span> let us use their labs for all of our experiments and gave us advice on experimental skills.</p>
+            <p style="font-size: 16px"> - <span style="font-weight: bold;">Prof. Tagawa</span> gave us advice on our project and helped us set up a forum.</p>
+            <p style="font-size: 16px"> - <span style="font-weight: bold;">Prof. Yamamura</span> gave us advice on modeling.</p>
+            <p style="font-size: 16px"> - <span style="font-weight: bold;">Promega Corporation and Leave a Nest Co.,ltd</span> gave us several kinds of restriction enzymes used in our experiments at no charge.</p>
+            <p style="font-size: 16px"> - We'd like to thank all advisors and instructors who helped us through the discussion of these ideas and instructed us about experimental procedures.</p>
+          </li>
+<br>
+
+          <li><h2><span style="font-size: 20px">Instrumental Analysis Support</span></h2>
+            <p style="font-size: 16px"> - <span style="font-weight: bold;">Biomaterial Analysis Center, Technical Department</span>, checked the sequences of the plasmids which we asked.</p>
+          </li>
+
+<br>
+
+          <li><h2><span style="font-size: 20px">Gene Synthesis</span></h2>
+            <p style="font-size: 16px"> - We'd also like to thank <span style="font-weight: bold;">MBL and IDT</span>.</p>
+          </li>
+
+<br>
+
+          <li><h2><span style="font-size: 20px">Human Practice Support</span></h2>
+            <p style="font-size: 16px"> - Koshigaya-Kita High School and Kasukabe High School warmly accepted our school visits.</p>
+            <p style="font-size: 16px"> - <span style="font-weight: bold;">Prof. Kiga, Prof. Oshima, Dr. Jiro Nudeshima,</span> who are working on The Tokyo Foundation, gave us lectures.</p>
+            <p style="font-size: 16px"> - <span style="font-weight: bold;">Prof. Nakasaki</span> gave us great and helpful advice.</p>
+          </li>
+
+<br>
+
+          <li><h2><span style="font-size: 20px">Presentation Advisor</span></h2>
+            <p style="font-size: 16px"> - We'd like to thank all the people who came to check our presentations and gave us useful feedbacks.</p>
+            <div class="table">
+                <p style="font-size: 16px">Professor:</p>
+                <p style="font-size: 16px"><span style="font-weight: bold; font-size: 14px">Yasunori Aizawa, Noriyuki Asakura, Hiroshi Iwasaki, Toshiaki Kamachi, Yasunori Tanji, Takeshi Hata, Takeshi Hirasawa, Junji Hirota, Shinji Masuda, Yuki Yamaguchi, Hideya Yuasa, Masaaki Wachi, Robert F. Whittier</span></p>
+          </li>
+
+          <li><h2><span style="font-size: 20px">Special Thanks</span></h2>
+            <p style="font-size: 16px"> - We'd like to thank <span style="font-weight: bold;">Takafumi Yamashino</span> for giving us the <span style="font-style: italic">E. coli</span> KMI002 strain used in AHK4 Assay.</p>
+            <p style="font-size: 16px"> - We'd like to thank <span style="font-weight: bold;">Tomohiro Morohoshi</span> for helping us test C8 productivity in TraI Assay.</p>
+          <p style="font-size: 16px"> -  We'd like to thank many staffs, friends, and families for their support and encouragement.</p>
+</div>
+</div>
+
+</div>
+
+ <div class="w3-container" id="contact" style="margin-top:20px">
+ <p id="pageTop" style="text-align:right"><a href="#wrap"><img src="http://2017.igem.org/wiki/images/0/0d/T--TokyoTech--page_top_2.png" style="width:200px"></a></p>
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"><a href="http://96haji.me/" title="W3.CSS" target="_blank" class="w3-hover-opacity">Hajime Fujita with W3.CSS: All Rights Reserved</a></p></div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+$(function() {
+  var h = $(window).height();
+ 
+  $('#wrap').css('display','none');
+  $('#loader-bg ,#loader').height(h).css('display','block');
+});
+ 
+$(window).load(function () { //全ての読み込みが完了したら実行
+  $('#loader-bg').delay(900).fadeOut(800);
+  $('#loader').delay(600).fadeOut(300);
+  $('#wrap').css('display', 'block');
+});
+</script>
+<script>
+//■page topボタン
+$(function(){
+var topBtn=$('#pageTop');
+topBtn.hide();
+ 
+//◇ボタンの表示設定
+$(window).scroll(function(){
+  if($(this).scrollTop()>80){
+    //---- 画面を80pxスクロールしたら、ボタンを表示する
+    topBtn.fadeIn();
+  }else{
+    //---- 画面が80pxより上なら、ボタンを表示しない
+    topBtn.fadeOut();
+  } 
+});
+ 
+// ◇ボタンをクリックしたら、スクロールして上に戻る
+topBtn.click(function(){
+  $('body,html').animate({
+  scrollTop: 0},500);
+  return false;
+});
+
+});
+</script>
+
+</body>
+</html>

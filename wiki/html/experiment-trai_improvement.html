@@ -1,0 +1,341 @@
+{{TokyoTech/css/reset}}
+{{TokyoTech/css/main}}
+<!DOCTYPE html>
+<html>
+<title>Coli Sapiens</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Arial", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<div id="loader-bg">
+  <div id="loader">
+    <div class="photo-show">
+    <img src="http://2017.igem.org/wiki/images/f/f4/T--TokyoTech--load_1.png" width="600">
+    <img src="http://2017.igem.org/wiki/images/4/43/T--TokyoTech--load_2.png" width="600">
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:20px">Close Menu</a>
+  <div class="w3-container" style="margin-top: 20px;margin-bottom: 25px" id="wrap">
+    <img src="http://2017.igem.org/wiki/images/a/a8/T--TokyoTech--logo_white_bright_10211603.png" style="width: 100%">
+  </div>
+
+  <div style="padding-top: 15px; padding-left: 25px; id="wrap">
+
+  <div id="contents" style="z-index: 10">
+
+    <ul class="click_menu_checkbox vertm_down">
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px;">
+    <input type="checkbox" id="vmcb-a" />
+    <label for="vmcb-a"><a href="http://2017.igem.org/Team:TokyoTech">Home</a></label>
+    </li>
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-b" />
+    <label for="vmcb-b"><a href="http://2017.igem.org/Team:TokyoTech/Medal">Achievements</a></label>
+    </li>
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-c" />
+    <label for="vmcb-c"><a>Project</a></label>
+     <ul>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Description" class="w3-bar-item w3-button w3-hover-white">Description</a></li>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Project/Basic_Parts" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Basic Parts</a></li>
+      <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Project/Composite_Parts" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Composite Parts</a></li>
+    </ul>
+    </li>
+
+    <li style="margin-bottom: 10px; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-d" />
+    <label for="vmcb-d"><a>Experiment</a></label>
+     <ul>
+
+        <li>
+        <input type="checkbox" id="vmcb-d1" />
+        <label for="vmcb-d1"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Overview" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="text-align: center;">Overview</a></label>
+        </li>
+
+        <li style="padding-bottom: 10px; padding-top: 5px">
+        <input type="checkbox" id="vmcb-d2" />
+          <label for="vmcb-d2"><a style="text-align: center;">Bacteria to <br>Human Cells ▼</a></label>
+            <ul>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">TraI Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Improvement" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">TraI Improvement <br>Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraR_Reporter_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" >TraR Reporter <br>Assay</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Transcriptome_Analysis" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Transcriptome <br>Analysis</a></li>
+              <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Experiment/Chimeric_Transcription_Factor" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Chimeric <br> Transcription <br> Factor Assay</a></li>
+            </ul>
+      </li>
+
+      <li style="padding-bottom: 3px">
+      <input type="checkbox" id="vmcb-d3" />
+    <label for="vmcb-d3"><a style="text-align: center;">Human Cells to <br>Bacteria ▼</a></label>
+        <ul>
+          <li><a href="http://2017.igem.org/Team:TokyoTech/Experiment/AHK4_Assay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">AHK4 Assay</a></li>
+          </ul>
+        </li>
+
+        <li>
+        <input type="checkbox" id="vmcb-d4" />
+    <label for="vmcb-d4"><a href="http://2017.igem.org/Team:TokyoTech/InterLab" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="text-align: center;">InterLab</a></label>
+        </li>
+    </ul>
+    </li>
+
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-e" />
+    <label for="vmcb-e"><a href="http://2017.igem.org/Team:TokyoTech/Model">Modelling</a></label>
+    </li>
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-f" />
+    <label for="vmcb-f"><a>Human Practices</a></label>
+    <ul>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Overview</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP/Silver" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Silver</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/HP/Gold_Integrated" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gold (Integrated)</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Demonstrate" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Demonstrate</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Collaborations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Collaborations</a></li>
+    </ul>
+    </li>
+
+    <li style="margin-bottom: 10px; text-align: center; border: 5px double #fff; border-radius: 10px">
+    <input type="checkbox" id="vmcb-g" />
+    <label for="vmcb-g"><a>About us</a></label>
+    <ul>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Team</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Attributions" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Attributions</a></li>
+    <li style="text-align: center;"><a href="http://2017.igem.org/Team:TokyoTech/Sponsors" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sponsors</a></li>
+    </ul>
+    </li>
+    </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()"><img src="http://www.adultb2b.biz/wp-content/themes/adultb2b%20-%20new/assets/images/menuBtn.png" style="width: 30px"></a>
+  <span style="padding-top: 5px">iGEM Tokyo Tech</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px"><!-- ここから本文 -->
+
+<div class="w3-container" id="contact" style="margin-top:30px"><!-- ページタイトル -->
+			<h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px" align="center">
+TraI Improvement Assay</h1>
+		</div>
+
+<hr>
+
+
+<div class="w3-container" id="overview" style="margin-top:20px"><!-- この箱の中にテキストや画像をまとめる -->
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Introduction</b></h1><!-- 小見出し -->
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p style="font-size: 16px; text-indent:1em">
+In the previous wiki page (Read <a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Assay">TraI Assay</a> page), we describe that the productivity of C8 in <span style="font-style: italic">E. coli</span> depends on the culture temperatures. However, to complete our co-culture system, the current 3OC8HSL (hereafter C8) productivity at 37℃ was not enough to transmit the AHL signal to human cells, because human cells are usually grown at 37℃. Therefore, we tried to mutate the <span style="font-style: italic">traI</span> gene and increase the productivity of C8 at 37℃.<br>
+    </p>
+
+  </div>
+<hr>
+
+
+<div class="w3-container" id="overview" style="margin-top:20px"><!-- この箱の中にテキストや画像をまとめる -->
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Summary of experiment</b></h1><!-- 小見出し -->
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+     <p style="font-size: 16px; text-indent:1em">
+TraI has not been characterized extensively, and thus, it is unclear what kind of mutations is appropriate for the above purpose. A preceding study describes that, in the case of LuxI, the amino acid substitution at the 34th and 63rd positions (both are substitutions from glutamate to glycine; E34G and E63G) increase the productivity of C6 (2). Since TraI has homology to LuxI over the entire amino acid sequences, we speculate that the same amino acid substitutions in TraI can increase the productivity of C8. Also, we here describe the modification of the culture conditions and the host strain choice for increased C8 production. <br>    </p>
+	</p>
+  </div>
+<hr>
+
+
+<div class="w3-container" id="results" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Results</b></h1><!-- 小見出し -->
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+	<p style="font-size: 16px; text-indent:1em">
+When amino acid sequences of TraI and LuxI were aligned using the clustal W program (1), the E34 and E63 residues of LuxI were found to correspond to K34 and Q63 residues of TraR. According to this information, oligonucleotide primers to create TraI-K34G, TraI-Q63G, and TraI-K34G,Q63G mutants were designed. The primer sequences are shown in Fig. 1. The mutations were introduced to the pSB1C3-based traI plasmid using the inverse-PCR method, and successful introduction of the mutations were confirmed with Sanger sequencing.<br>
+	<div class="w3-xxxlarge" style="padding-bottom: 10px;padding-top: 10px;text-align: center">
+	<figure>
+    	<img src="http://2017.igem.org/wiki/images/4/43/T--TokyoTech--TraIimprove100.jpg" style="max-width:80%">
+    	<figcaption style="font-size: 16px">Fig. 1 Sequences of the primers. Note that each primer set is divergent for inverse-PCR</figcaption>
+	</figure>
+	</p>
+    <p style="font-size: 16px; text-indent:1em">
+The sequences of <span style="font-style: italic">traI</span> mutants and wild-type are shown in Fig. 2. The plasmids we used are shown in Fig. 3 and 4. The Sender and the Reporter strains were prepared in the same way as described in the previous wiki page (Read <a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Assay">TraI Assay</a> page).<br>	
+    	<figure>
+    	<img src="http://2017.igem.org/wiki/images/c/c9/T--TokyoTech--TraIimprove20.jpg" style="max-width:80%">
+    	<figcaption style="font-size: 16px">Fig. 2 Sequence of <span style="font-style: italic">traI</span> wild type gene and mutant</figcaption>
+	</figure>
+	<br>
+	<figure>
+	<img src="http://2017.igem.org/wiki/images/5/51/Fig2_structure_of_the_plasmid.png" style="max-width:75%">
+    	<figcaption style="font-size: 16px">Fig. 3 Structure of the plasmids used for creating the “Reporter” strain. </figcaption>
+    	</figure>
+	</br>
+	<figure>
+	<img src="http://2017.igem.org/wiki/images/d/d7/TraI_Improvement_fig4.png" style="max-width:65%">
+    	<figcaption style="font-size: 16px">Fig. 4 Structure of the plasmids used for creating the “Sender” and “Mutated Sender” strains. One of these plasmids was used for preparing each transfromant</figcaption>
+    	</figure>
+	</p>
+	</div>
+	<p style="font-size: 16px; text-indent:1em">
+In the experiments shown in this page, one additional modification was made in experimental conditions; 1 microM of SAM (S-adenosylmethionine; structure is shown in Fig. 5) was added to the culture of the Sender. Since C8 is synthesized from SAM and ACP (acyl carrier protein) through the action of TraI in bacterial cells (3), we expected that the addition of SAM may increase the productivity.	</p>
+	<div class="w3-xxxlarge" style="padding-bottom: 10px;padding-top: 10px;text-align: center">
+	<figure>
+	<img src="http://2017.igem.org/wiki/images/4/41/T--TokyoTech--TraIimprove200.jpeg" style="max-width:50%">
+</br>
+</br>
+    	<figcaption style="font-size: 16px">Fig. 5 Chemical structure of SAM (S‐adenosylmethionine) </figcaption>
+    	</figure>
+	</p>	
+	<p style="font-size: 16px; text-indent:1em">
+The result of C8 production using the TraI wild-type and the mutants is shown in Fig. 6. "W.T." means native <span style="font-style: italic">traI</span>.<br>
+The RFU value of the TraI(K34G)-expressing cells was about 3-fold higher than that of the TraI-expressing cells. <span style="font-style: italic">E. coli</span> introduced empty vector was used as Negative Control.<br>
+Other mutant did not show improvement of C8 production (data was not shown).<br>
+When these RFU values were converted to C8 concentrations using the calibration curve obtained in the reagent assay (Read <a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Assay">TraI Assay</a> page), they were calculated as 28 nM and 42 nM, respectively.<br>
+	<figure>
+	<img src="http://2017.igem.org/wiki/images/3/32/T--TokyoTech--TraIimprove50.jpg" style="max-width:50%">
+    	<figcaption style="font-size: 16px">Fig. 6 Improvement of C8 production by the K34G mutant (37℃ culture)</figcaption>
+    	</figure>
+	</p>
+	<p style="font-size: 16px; text-indent:1em">
+</br>
+Also, the other modification was made concerning the host strain of the Sender. The preceding iGEM study has shown that the amount of AHL produced by the <span style="font-style: italic">luxI</span> gene highly depends on the host strain; depending on the used strains as the Sender, there was approximatly 100-fold difference in cell number for obtaining the same activation level of the lux promoter (4). Therefore, we here used the other strain, MG1655hapB, as the Sender.<br>
+Note that, in the experiments of the previous wiki page (Read <a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Assay">TraI Assay</a> page
+), only the DH5α strain was used as a host. The MG1655hapB strain is a mutant of MG1655 (the representative wild-type K12 strain) and has higher membrane permeability for hydrophobic compounds compared to the parent.<br>
+As a result (Fig. 7), we found that amount of C8 produced is dependent on strains. The RFU value in the MG1655hapB strain was about 3-fold higher than that in the DH5α strain. <span style="font-style: italic">E. coli</span> introduced empty vector was used as Negative Control.<br>
+When these RFU values were converted to C8 concentrations using the calibration curve obtained in the reagent assay (Read <a href="http://2017.igem.org/Team:TokyoTech/Experiment/TraI_Assay">TraI Assay</a> page), they were calculated as 28 and 37 nM, respectively.
+	</p>
+	<p style="font-size: 16px; text-indent:1em">
+Strain dependence of AHL production<br>
+We found that amount of C8 production is depend on <span style="font-style: italic">E. coli</span>’s strain. RFU is 2-fold higher than DH5α. <br>
+Calculated from the graph obtained in the reagent assay, C8 concentration of DH5α culture was 28 nM and MG1655hapB culture was 36 nM.
+    	<figure>
+    	<img src="http://2017.igem.org/wiki/images/f/f7/T--TokyoTech--TraIimprove3.jpg" style="max-width:50%">
+    	<figcaption style="font-size: 16px">Fig. 7 Strain dependence of C8 production</figcaption>
+    	</figure>
+	</p>
+  </div>
+<hr>
+
+
+<div class="w3-container" id="results" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Discussion</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+   <p style="font-size: 16px; text-indent:1em">
+In the previous study, it was considered that the E34G mutation of LuxI most likely enhances the interactions between the enzyme and the ACP substrate. Therefore, we thought that K34G mutation of TraI also has the same effect.  <br>
+It was also showed that the MG1655hapB strain produced more C8 than the DH5α strain. We speculate that the difference in permeability of hydrophobic compounds through the cell membrane is the main reason for this result.<br>
+Taken together, we conclude that increasing the productivity of C8 at 37℃ was successful. Notably, generation and functional identification the mutant traI (TraI(K34G)) meet the medal criteria of ”parts improvement”, because the wild-type <span style="font-style: italic">traI</span> parts was registered in iGEM parts collection earlier (Read <a href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K553001">BBa_K553001</a> page). However, further improvement of C8 production is necessary to transmit the signal from bacteria to human cells. Such improvement is possible through tuning the experimental conditions further.<br>
+    </p>
+</div>
+<hr>
+
+ <div id="mtt" class="w3-container" id="overview" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b> Appendix: Material and Method</b></h2>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+      <center>
+    <object data="http://2017.igem.org/wiki/images/f/fb/TraI_improvement.pdf" type="application/pdf" style="width: 70%; height: 800px"></object>
+    </center>
+    </div>
+
+<hr>
+
+
+<div class="w3-container" id="results" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red" style="padding-bottom: 10px;padding-top: 10px"><b>Reference</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p style="font-size: 16px; text-indent:1em">">
+(1). http://www.genome.jp/tools-bin/clustalw<br>
+(2). Pavan Kumar Reddy Kambam, Daniel J. Sayut, Yan Niu, Dawn T. Eriksen, Lianhong Sun (2008) Directed evolution of LuxI for enhanced OHHL production. Biotechnology and Bioengineering Volume 101, Issue 2 1 October 2008 Pages 263-272<br>
+(3). MATTHEW R. PARSEK, DALE L. VAL, BRIAN L. HANZELKA, JOHN E. CRONAN, E. P. GREENBERG (1999) Acyl homoserine-lactone quorum-sensing signal generation. Proc. Natl. Acad. Sci. USA Vol. 96, pp. 4360-4365, April 1999 Biochemistry<br>
+(4). http://2007.igem.org/wiki/index.php/Chiba/Quorum_Sensing<br>
+    </p>
+
+</div><!-- ここまでが編集可能範囲 -->
+
+</div>
+
+ <div class="w3-container" id="contact" style="margin-top:20px">
+ <p id="pageTop" style="text-align:right"><a href="#wrap"><img src="http://2017.igem.org/wiki/images/0/0d/T--TokyoTech--page_top_2.png" style="width:200px"></a></p>
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"><a href="http://96haji.me/" title="W3.CSS" target="_blank" class="w3-hover-opacity">Hajime Fujita with W3.CSS: All Rights Reserved</a></p></div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+$(function() {
+  var h = $(window).height();
+ 
+  $('#wrap').css('display','none');
+  $('#loader-bg ,#loader').height(h).css('display','block');
+});
+ 
+$(window).load(function () { //全ての読み込みが完了したら実行
+  $('#loader-bg').delay(900).fadeOut(800);
+  $('#loader').delay(600).fadeOut(300);
+  $('#wrap').css('display', 'block');
+});
+</script>
+<script>
+//■page topボタン
+$(function(){
+var topBtn=$('#pageTop');
+topBtn.hide();
+ 
+//◇ボタンの表示設定
+$(window).scroll(function(){
+  if($(this).scrollTop()>80){
+    //---- 画面を80pxスクロールしたら、ボタンを表示する
+    topBtn.fadeIn();
+  }else{
+    //---- 画面が80pxより上なら、ボタンを表示しない
+    topBtn.fadeOut();
+  } 
+});
+ 
+// ◇ボタンをクリックしたら、スクロールして上に戻る
+topBtn.click(function(){
+  $('body,html').animate({
+  scrollTop: 0},500);
+  return false;
+});
+
+});
+</script>
+
+</body>
+</html>
